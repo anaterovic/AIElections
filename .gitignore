@@ -1,0 +1,38 @@
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore development and IDE-specific files
+.vscode/
+.idea/
+*.pydevproject
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore any local configuration files
+*.env
+
+# Ignore sensitive or private information (update this as per your project)
+config.ini
+secrets.json
+
+# Ignore logs and temporary files
+*.log
+*.log.*
+/logs/**/*.txt
+
+
+# Ignore any virtual environment folders (e.g., created by virtualenv or pipenv)
+.venv/
+venv/
+env/
+
+# Ignore temporary files
+tmp/
