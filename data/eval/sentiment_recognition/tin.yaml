@@ -238,81 +238,81 @@
   Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/sdp-kritizirao-vuckovic-zbog-nastupa-na-hrtu-ona-im-sad-odgovorila/2334067.aspx
   id: 35
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: -2
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.jutarnji.hr/vijesti/hrvatska/varazdin-postaje-prvi-grad-koji-financira-rad-psihologa-u-osnovnim-skolama-koje-ih-nemaju-15152724
   id: 36
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: 2
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/puhovski-o-skorinom-domovinskom-pokretu-on-igra-na-sarm-ali-nema-dobre-sanse/2160952.aspx
   id: 37
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: 0
+  Možemo!: [NO]
+  MOST: 0
+  Domovinski pokret (DP): -2
 - url: https://www.24sata.hr/kolumne/maskare-su-prosle-a-miroslav-skoro-svejedno-glumi-orbana-678847
   id: 38
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): -2
 - url: https://www.index.hr/vijesti/clanak/najnovija-anketa-sdp-povecao-prednost-pred-hdzom-skoro-raste/2163170.aspx
   id: 39
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: 1
+  Možemo!: [NO]
+  MOST: -1
+  Domovinski pokret (DP): 1
 - url: https://www.dnevno.hr/vijesti/hrvatska/brojke-su-na-skorinoj-strani-i-pored-bandica-je-imao-sanse-sad-je-favorit-za-ulazak-u-drugi-krug-tomasevic-u-panici-mora-mijenjati-kampanju-1685113/
   id: 40
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: 0
+  Možemo!: -1
+  MOST: 0
+  Domovinski pokret (DP): 1
 - url: https://www.index.hr/vijesti/clanak/ovo-je-tip-koji-je-danas-uz-prijetnju-bombom-upao-u-skolu-i-trazio-hdzovog-zupana/2258954.aspx
   id: 41
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): 0
 - url: https://net.hr/danas/vijesti/jandrokovic-skoro-ce-i-u-zagrebu-nastaviti-gubitnicki-niz-nije-mi-jasno-zasto-ulazi-u-vec-izgubljene-bitke-317f0922-b9f4-11ec-9fb6-0242ac13001c
   id: 42
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): -1
 - url: https://www.jutarnji.hr/vijesti/zagreb/tomasevic-upozorio-na-urbanisticki-kaos-u-trnju-komentirao-i-skorinu-kandidaturu-15055730
   id: 43
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: [NO]
+  SDP: [NO]
+  Možemo!: 1
+  MOST: [NO]
+  Domovinski pokret (DP): 0
 - url: https://www.index.hr/vijesti/clanak/hdz-i-sdp-u-padu-mozemo-treca-stranka-u-hrvatskoj/2259415.aspx
   id: 44
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: -1
+  Možemo!: 1
+  MOST: 0
+  Domovinski pokret (DP): -1
 - url: https://www.index.hr/vijesti/clanak/tomasevic-tesko-optuzen-mozemo-suti-analiticar-njima-odluke-sapcu-prijatelji/2309243.aspx
   id: 45
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: [NO]
+  Možemo!: -2
+  MOST: [NO]
+  Domovinski pokret (DP): 0
 - url: https://direktno.hr/domovina/grbin-hdz-ako-ste-face-raspisite-izbore-grmoja-jasno-da-presuda-fimi-mediju-drzana-ladici-mjesecima-247406/
   id: 46
   HDZ:
