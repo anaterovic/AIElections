@@ -1,204 +1,205 @@
 - url: https://www.24sata.hr/news/plenkovicu-skupi-zetone-zovi-kumove-odrijesi-kesu-i-pokreni-opoziv-treba-li-tebe-opozvati-753604
-  id:
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  id: 1
+  HDZ: -2
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.24sata.hr/news/opet-vidimo-kako-hdz-stiti-i-spasava-svoje-lokalne-serife-740934
-  id:
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  id: 2
+  HDZ: -2
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://dnevnik.hr/vijesti/hrvatska/hdz-nakon-izlaska-dvoje-clanova-iz-kluba-domovinskog-pokreta-sve-vise-hrvatskih-ljudi-shvaca-da-su-skoro-i-njegov-pokret-fejk---634818.html
   id: 3
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): -1
 - url: https://www.index.hr/vijesti/clanak/jandrokovic-akcija-bljesak-je-slomila-kraljeznicu-velike-srbije/2272905.aspx
   id: 4
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: 0
+  Domovinski pokret (DP): [NO]
 - url: https://www.24sata.hr/news/europska-federacija-novinara-osudila-plenkoviceve-izjave-765480
   id: 5
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1 #TODO maybe -2
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.24sata.hr/news/novi-predsjednik-skupstine-licko-senjske-zupanije-je-kustic-768150
   id: 6
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0 #TODO maybe 1
+  SDP: 0
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): 0
 - url: https://www.index.hr/vijesti/clanak/hdzovac-tudjman-se-zapravo-cijelog-zivota-pripremao-za-osnivanje-hdza/2284065.aspx
   id: 7
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
+  HDZ: 0 #TODO maybe 1
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.24sata.hr/news/u-plenkovicevu-mandatu-hdz-pobjeduje-jer-rjesava-probleme-770261
   id: 8
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0 #TODO maybe 1, Bozinovic je sam sebe hvalio
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.dnevno.hr/vijesti/hrvatska/sjajna-vijest-za-hrvatsku-obavljen-jedan-od-posljednjih-koraka-za-ukidanje-viza-1799181/
   id: 9
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 1 # TODO maybe 2
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/beljak-napao-sdp/2294822.aspx
   id: 10
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: 0
+  Možemo!: [NO]
+  MOST: 0
+  Domovinski pokret (DP): 0
 - url: https://sibenski.slobodnadalmacija.hr/sibenik/vijesti/hrvatska-i-svijet/u-domovinskom-pokretu-su-kovali-velike-planove-a-onda-se-posvadili-zbog-para-i-zena-1118479
   id: 11
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 1 # TODO maybe 0, pricaju o tome kakosu bili optuzivani od strane DP-a ali da sada imaju veliku stratesku prednoost
+  SDP: -1 # "SDP je u dubokoj krizi"
+  Možemo!: [NO]
+  MOST: 0
+  Domovinski pokret (DP): -2
 - url: https://www.dnevno.hr/vijesti/hrvatska/ni-za-kraljevine-jugoslavije-nije-bilo-ovoliko-zandara-bulj-rafalno-po-stozeru-i-hdz-u-oni-se-rugaju-s-nama-nije-im-ovo-cacino-1802393/
   id: 12
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: 0 # indirektno kroz Miru Bulja
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/jedini-koji-mogu-biti-zadovoljni-hrvatskom-politikom-su-hdz-i-plenkovic/2425365.aspx
   id: 13
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 1
+  SDP: -1 # generalno se pljuje po oporbi
+  Možemo!: 1
+  MOST: -1 # generalno se pljuje po oporbi
+  Domovinski pokret (DP): -1 # generalno se pljuje po oporbi
 - url: https://direktno.hr/direkt/plenkovic-cestitao-covicu-rodendan-sestrinske-stranke-241712/
   id: 14
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.24sata.hr/news/gong-o-tomasevicu-i-holdingu-imenovanja-bez-natjecaja-nisu-put-koji-su-izabrali-zagrepcani-768249
   id: 15
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: [NO]
+  SDP: [NO]
+  Možemo!: -1
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/oporba-nema-razlike-izmedju-sanaderovog-i-plenkovicevog-hdza/2317307.aspx
   id: 16
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -2
+  SDP: 0
+  Možemo!: 0
+  MOST: 0
+  Domovinski pokret (DP): 0
 - url: https://www.24sata.hr/news/grbin-prozvao-plenkovica-zbog-cjepiva-zasto-suti-i-ne-reagira-na-nepravdu-prema-hrvatskoj-750562
   id: 17
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: 0 # moglo bi biti 1 ali ovdje šef stranke usputno hvali svoju stranku, dok je napad na HDZ u prvom planu
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://dnevnik.hr/vijesti/hrvatska/pozar-u-najvecoj-oporbenoj-stranci-ni-priblizno-nije-pred-gasenjem---669190.html
   id: 18
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: [NO]
+  SDP: -1
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.jutarnji.hr/vijesti/hrvatska/mozemo-zauzeo-pazin-na-prijevremenim-izborima-osvojio-natpolovicnu-vecinu-u-vijecu-15107235
   id: 19
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1 # indukcija iz cinjenice da je dobio malo oddnosno manje mandata nego prije
+  SDP: -1 # indukcija iz cinjenice da je dobio malo oddnosno manje mandata nego prije
+  Možemo!: 2
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.24sata.hr/news/problemi-za-sdp-ne-prestaju-organizaciju-u-splitu-napustaju-83-clana-izboru-kazu-farsa-799125
   id: 20
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: [NO]
+  SDP: -2
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.dnevno.hr/vijesti/gigant-teskih-rijeci-i-nervoze-liliputanac-djela-i-uspjeha-hdz-u-ostroj-objavi-napao-grmoju-i-most-ovce-1871158/
   id: 21
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: -1 # ovdje bi moglo biti i 0 jer jedino sto je negativno je da HDZ ih optuzuje jer nisu skupili dovoljan broj ruku za nesto i dodatno iz vrijeđa bez elaboracije
+  Možemo!: 0
+  MOST: -1 # ovdje bi moglo biti i 0 jer jedino sto je negativno je da HDZ ih optuzuje jer nisu skupili dovoljan broj ruku za nesto i dodatno iz vrijeđa bez elaboracije
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/magazin/clanak/filipovic-objavio-snimku-tomasevicevog-zamjenika-igra-sah-na-sjednici/2323041.aspx
   id: 22
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: 0 # nedovoljno za -1
+  Možemo!: -1
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.24sata.hr/news/viktor-gotovac-novi-je-sef-sdp-a-u-zagrebu-strucnjak-je-za-radno-pravo-zeli-povratak-titova-trga-801002
   id: 23
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: [NO]
+  SDP: -1 # iako clanak nije direktno negativan svojom temom, spominje se kako je SDP razjedinjen i da su se birači okrenuli Možemo! u zagrebu
+  Možemo!: 1
+  MOST: [NO]
+  Domovinski pokret (DP): 0
 - url: https://www.24sata.hr/news/likvidacija-aleksandre-zec-iskonski-je-grijeh-tudmanove-hrvatske-od-kojeg-hdz-bjezi-801518
   id: 24
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: 1
+  Možemo!: 1
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/roditelji-odgojitelji-ce-tuziti-zagreb/2324793.aspx
   id: 25
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: [NO]
+  SDP: -1
+  Možemo!: -1
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/beljak-mostovci-su-paraziti-to-je-cinjenica/2325935.aspx
   id: 26
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: 0
+  Možemo!: [NO]
+  MOST: -1
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/beljak-mostovci-su-paraziti-to-je-cinjenica/2325935.aspx
   id: 27
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: 0
+  Možemo!: [NO]
+  MOST: -1
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/puljak-kad-god-se-pokusao-uvesti-red-svugdje-iza-nereda-je-bio-hdz/2326209.aspx
   id: 28
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -1
+  SDP: 0
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://dubrovacki.slobodnadalmacija.hr/dubrovnik/vijesti/hrvatska-i-svijet/orepic-nekadasnji-mostovac-most-je-agresivna-krajnja-desnica-zekanovic-oni-su-protivnici-cijepljenja-keleminec-most-je-prevara-dva-puta-su-isli-s-hdz-om-1151892
   id: 29
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
+  HDZ: 0
+  SDP: 0
+  Možemo!: [NO]
+  MOST: -2
   Domovinski pokret (DP):
 - url: https://www.jutarnji.hr/globus/politika/sto-je-ostalo-od-normalnoga-sdp-i-dalje-porice-stvarnost-i-trazi-alibi-za-svojega-milanovica-15134199
   id: 30
@@ -209,32 +210,32 @@
   Domovinski pokret (DP):
 - url: https://direktno.hr/domovina/radimir-cacic-ostaje-predsjednik-reformista-253572/
   id: 31
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: 0
+  Možemo!: [NO]
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.dnevno.hr/vijesti/hrvatska/bolan-slom-tomaseviceve-platforme-ovo-nitko-nije-ocekivao-u-novoj-godini-prijeti-im-velika-opasnost-1885824/
   id: 32
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: [NO]
+  SDP: 0
+  Možemo!: -2
+  MOST: 0
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/za-hrvatsku-je-ovo-bila-izgubljena-godina-ne-zbog-pandemije/2329299.aspx
   id: 33
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -2
+  SDP: -1
+  Možemo!: -1
+  MOST: -1
+  Domovinski pokret (DP): -1 # kritika oporbi a jos veca kritika vlasti
 - url: https://www.jutarnji.hr/vijesti/hrvatska/sandra-bencic-gradit-cemo-stanove-u-zagrebu-i-davati-ih-mladima-u-jeftin-dugogodisnji-najam-15146931
   id: 34
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -2
+  SDP: 0
+  Možemo!: 2
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
 - url: https://www.index.hr/vijesti/clanak/sdp-kritizirao-vuckovic-zbog-nastupa-na-hrtu-ona-im-sad-odgovorila/2334067.aspx
   id: 35
   HDZ:
@@ -347,4 +348,3 @@
   Možemo!:
   MOST:
   Domovinski pokret (DP):
-
