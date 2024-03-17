@@ -315,36 +315,36 @@
   Domovinski pokret (DP): 0
 - url: https://direktno.hr/domovina/grbin-hdz-ako-ste-face-raspisite-izbore-grmoja-jasno-da-presuda-fimi-mediju-drzana-ladici-mjesecima-247406/
   id: 46
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -2
+  SDP: 0
+  Možemo!: 0
+  MOST: 0
+  Domovinski pokret (DP): 0
 - url: https://direktno.hr/domovina/bacic-sacuvaj-me-boze-sdp-ovih-mjera-koje-najavljuju-boric-porucio-oporbi-nismo-ni-frajeri-ni-populisti-260381/
   id: 47
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 1
+  SDP: -1
+  Možemo!: 0
+  MOST: 0
+  Domovinski pokret (DP): 0
 - url: https://direktno.hr/direkt/grmoja-most-je-napravio-najsnazniji-lustracijski-potez-u-povijesti-hrvatske-zekanovic-odite-se-sa-sincicem-i-kolakusicem-u-visoko-klanjati-piramida-265231/
-  id: 48
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  id: 48  # TODO ovaj clanak je posebno zanimljiv jer za svaku stranku ima pro statement od njezine clana i kontra statement od clana druge stranke kao odgovor na to
+  HDZ: 0
+  SDP: 0
+  Možemo!: [NO]
+  MOST: 0
+  Domovinski pokret (DP): -1
 - url: https://www.telegram.hr/politika-kriminal/veliki-intervju-sa-sandrom-bencic-hdz-ne-moze-imati-stabilnu-vladu-njihove-ljude-povuce-koruptivna-hobotnica-i-zavrse-u-remetincu/
   id: 49
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: -2
+  SDP: -1
+  Možemo!: 2
+  MOST: -1
+  Domovinski pokret (DP): 0
 - url: https://www.index.hr/vijesti/clanak/antifasisti-nije-vracen-neposteno-oduzet-naziv-trgu-marsala-tita-biraci-prevareni/2412772.aspx
   id: 50
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: [NO]
+  SDP: 1
+  Možemo!: -1
+  MOST: [NO]
+  Domovinski pokret (DP): [NO]
