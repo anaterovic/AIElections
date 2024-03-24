@@ -290,15 +290,15 @@
   Scandal: 0
 - url: https://www.jutarnji.hr/globus/politika/sto-je-ostalo-od-normalnoga-sdp-i-dalje-porice-stvarnost-i-trazi-alibi-za-svojega-milanovica-15134199
   id: 30
-  HDZ:
-  SDP:
-  Možemo!:
-  MOST:
-  Domovinski pokret (DP):
+  HDZ: 0
+  SDP: [NO]
+  Možemo!: [NO]
+  MOST: -1
+  Domovinski pokret (DP): [NO]
   Policy: 0
   Ideological: 1
   Scandal: 0
-- url: https://direktno.hr/domovina/radimir-cacic-ostaje-predsjednik-reformista-253572/
+- url: https://www.index.hr/vijesti/clanak/radimir-cacic-ostaje-sef-reformista/2326476.aspx
   id: 31
   HDZ: 0
   SDP: 0
