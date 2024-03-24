@@ -10,7 +10,7 @@ from newspaper import Article
 
 from src.sentiment_labeling.api import chatgpt_api, yugogpt_api
 
-OUTPUT_PATH = "C:/Users/dsmoljan/Desktop/AI izbori/DATA/eval/sentiment_recognition"
+OUTPUT_PATH = "C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/data/eval/sentiment_recognition"
 
 load_dotenv()
 
@@ -58,16 +58,16 @@ def generate_and_export_predictions(input_filename, export_format="yaml", env=No
 
                 print("Response: ", response)
 
-                # param_scores = yaml.safe_load(response)
-                #
-                # data = {
-                #     "url": url,
-                #     "id": id
-                # }
-                #
-                # data = {**data, **param_scores}
-                #
-                # output_data.append(data)
+                param_scores = yaml.safe_load(response)
+
+                data = {
+                    "url": url,
+                    "id": id
+                }
+
+                data = {**data, **param_scores}
+
+                output_data.append(data)
 
 
             except StopIteration:

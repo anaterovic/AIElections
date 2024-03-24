@@ -1,29 +1,29 @@
 - url: https://www.24sata.hr/news/plenkovicu-skupi-zetone-zovi-kumove-odrijesi-kesu-i-pokreni-opoziv-treba-li-tebe-opozvati-753604
   id: 1
-  HDZ: -2
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  HDZ: -1
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 1
   Ideological: 1
   Scandal: 1
 - url: https://www.24sata.hr/news/opet-vidimo-kako-hdz-stiti-i-spasava-svoje-lokalne-serife-740934
   id: 2
-  HDZ: -2
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  HDZ: -1
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 0
   Scandal: 1
 - url: https://dnevnik.hr/vijesti/hrvatska/hdz-nakon-izlaska-dvoje-clanova-iz-kluba-domovinskog-pokreta-sve-vise-hrvatskih-ljudi-shvaca-da-su-skoro-i-njegov-pokret-fejk---634818.html
   id: 3
   HDZ: 0
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
   Domovinski pokret (DP): -1
   Policy: 0
   Ideological: 0
@@ -31,20 +31,20 @@
 - url: https://www.index.hr/vijesti/clanak/jandrokovic-akcija-bljesak-je-slomila-kraljeznicu-velike-srbije/2272905.aspx
   id: 4
   HDZ: 0
-  SDP: [NO]
-  Možemo!: [NO]
+  SDP: NO
+  Možemo!: NO
   MOST: 0
-  Domovinski pokret (DP): [NO]
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 1
   Scandal: 0
 - url: https://www.24sata.hr/news/europska-federacija-novinara-osudila-plenkoviceve-izjave-765480
   id: 5
   HDZ: -1 #TODO maybe -2
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 0
   Scandal: 0
@@ -52,8 +52,8 @@
   id: 6
   HDZ: 0 #TODO maybe 1
   SDP: 0
-  Možemo!: [NO]
-  MOST: [NO]
+  Možemo!: NO
+  MOST: NO
   Domovinski pokret (DP): 0
   Policy: 0
   Ideological: 0
@@ -61,30 +61,30 @@
 - url: https://www.index.hr/vijesti/clanak/hdzovac-tudjman-se-zapravo-cijelog-zivota-pripremao-za-osnivanje-hdza/2284065.aspx
   id: 7
   HDZ: 0 #TODO maybe 1
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 1
   Ideological: 1
   Scandal: 0
 - url: https://www.24sata.hr/news/u-plenkovicevu-mandatu-hdz-pobjeduje-jer-rjesava-probleme-770261
   id: 8
   HDZ: 0 #TODO maybe 1, Bozinovic je sam sebe hvalio
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 1
   Ideological: 0
   Scandal: 0
 - url: https://www.dnevno.hr/vijesti/hrvatska/sjajna-vijest-za-hrvatsku-obavljen-jedan-od-posljednjih-koraka-za-ukidanje-viza-1799181/
   id: 9
   HDZ: 1 # TODO maybe 2
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 1
   Ideological: 0
   Scandal: 0
@@ -92,7 +92,7 @@
   id: 10
   HDZ: 0
   SDP: 0
-  Možemo!: [NO]
+  Možemo!: NO
   MOST: 0
   Domovinski pokret (DP): 0
   Policy: 0
@@ -102,19 +102,19 @@
   id: 11
   HDZ: 1 # TODO maybe 0, pricaju o tome kakosu bili optuzivani od strane DP-a ali da sada imaju veliku stratesku prednoost
   SDP: -1 # "SDP je u dubokoj krizi"
-  Možemo!: [NO]
+  Možemo!: NO
   MOST: 0
-  Domovinski pokret (DP): -2
+  Domovinski pokret (DP): -1
   Policy: 0
   Ideological: 0
   Scandal: 1
 - url: https://www.dnevno.hr/vijesti/hrvatska/ni-za-kraljevine-jugoslavije-nije-bilo-ovoliko-zandara-bulj-rafalno-po-stozeru-i-hdz-u-oni-se-rugaju-s-nama-nije-im-ovo-cacino-1802393/
   id: 12
   HDZ: -1
-  SDP: [NO]
-  Možemo!: [NO]
+  SDP: NO
+  Možemo!: NO
   MOST: 0 # indirektno kroz Miru Bulja
-  Domovinski pokret (DP): [NO]
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 1
   Scandal: 0
@@ -131,26 +131,26 @@
 - url: https://direktno.hr/direkt/plenkovic-cestitao-covicu-rodendan-sestrinske-stranke-241712/
   id: 14
   HDZ: 0
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 1
   Scandal: 0
 - url: https://www.24sata.hr/news/gong-o-tomasevicu-i-holdingu-imenovanja-bez-natjecaja-nisu-put-koji-su-izabrali-zagrepcani-768249
   id: 15
-  HDZ: [NO]
-  SDP: [NO]
+  HDZ: NO
+  SDP: NO
   Možemo!: -1
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 1
   Ideological: 0
   Scandal: 1
 - url: https://www.index.hr/vijesti/clanak/oporba-nema-razlike-izmedju-sanaderovog-i-plenkovicevog-hdza/2317307.aspx
   id: 16
-  HDZ: -2
+  HDZ: -1
   SDP: 0
   Možemo!: 0
   MOST: 0
@@ -162,19 +162,19 @@
   id: 17
   HDZ: -1
   SDP: 0 # moglo bi biti 1 ali ovdje šef stranke usputno hvali svoju stranku, dok je napad na HDZ u prvom planu
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 1
   Scandal: 0
 - url: https://dnevnik.hr/vijesti/hrvatska/pozar-u-najvecoj-oporbenoj-stranci-ni-priblizno-nije-pred-gasenjem---669190.html
   id: 18
-  HDZ: [NO]
+  HDZ: NO
   SDP: -1
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 0
   Scandal: 0
@@ -182,19 +182,19 @@
   id: 19
   HDZ: -1 # indukcija iz cinjenice da je dobio malo oddnosno manje mandata nego prije
   SDP: -1 # indukcija iz cinjenice da je dobio malo oddnosno manje mandata nego prije
-  Možemo!: 2
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  Možemo!: 1
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 0
   Scandal: 0
 - url: https://www.24sata.hr/news/problemi-za-sdp-ne-prestaju-organizaciju-u-splitu-napustaju-83-clana-izboru-kazu-farsa-799125
   id: 20
-  HDZ: [NO]
-  SDP: -2
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  HDZ: NO
+  SDP: -1
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 0
   Scandal: 0
@@ -204,7 +204,7 @@
   SDP: -1 # ovdje bi moglo biti i 0 jer jedino sto je negativno je da HDZ ih optuzuje jer nisu skupili dovoljan broj ruku za nesto i dodatno iz vrijeđa bez elaboracije
   Možemo!: 0
   MOST: -1 # ovdje bi moglo biti i 0 jer jedino sto je negativno je da HDZ ih optuzuje jer nisu skupili dovoljan broj ruku za nesto i dodatno iz vrijeđa bez elaboracije
-  Domovinski pokret (DP): [NO]
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 0
   Scandal: 1
@@ -213,17 +213,17 @@
   HDZ: 0
   SDP: 0 # nedovoljno za -1
   Možemo!: -1
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 0
   Scandal: 0
 - url: https://www.24sata.hr/news/viktor-gotovac-novi-je-sef-sdp-a-u-zagrebu-strucnjak-je-za-radno-pravo-zeli-povratak-titova-trga-801002
   id: 23
-  HDZ: [NO]
+  HDZ: NO
   SDP: -1 # iako clanak nije direktno negativan svojom temom, spominje se kako je SDP razjedinjen i da su se birači okrenuli Možemo! u zagrebu
   Možemo!: 1
-  MOST: [NO]
+  MOST: NO
   Domovinski pokret (DP): 0
   Policy: 0
   Ideological: 1
@@ -233,18 +233,18 @@
   HDZ: -1
   SDP: 1
   Možemo!: 1
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 1
   Scandal: 0
 - url: https://www.index.hr/vijesti/clanak/roditelji-odgojitelji-ce-tuziti-zagreb/2324793.aspx
   id: 25
-  HDZ: [NO]
+  HDZ: NO
   SDP: -1
   Možemo!: -1
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 0
   Scandal: 0
@@ -252,9 +252,9 @@
   id: 26
   HDZ: -1
   SDP: 0
-  Možemo!: [NO]
+  Možemo!: NO
   MOST: -1
-  Domovinski pokret (DP): [NO]
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 1
   Scandal: 0
@@ -262,9 +262,9 @@
   id: 27
   HDZ: -1
   SDP: 0
-  Možemo!: [NO]
+  Možemo!: NO
   MOST: -1
-  Domovinski pokret (DP): [NO]
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 1
   Scandal: 0
@@ -272,9 +272,9 @@
   id: 28
   HDZ: -1
   SDP: 0
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 1
   Ideological: 0
   Scandal: 0
@@ -282,8 +282,8 @@
   id: 29
   HDZ: 0
   SDP: 0
-  Možemo!: [NO]
-  MOST: -2
+  Možemo!: NO
+  MOST: -1
   Domovinski pokret (DP):
   Policy: 0
   Ideological: 1
@@ -291,10 +291,10 @@
 - url: https://www.jutarnji.hr/globus/politika/sto-je-ostalo-od-normalnoga-sdp-i-dalje-porice-stvarnost-i-trazi-alibi-za-svojega-milanovica-15134199
   id: 30
   HDZ: 0
-  SDP: [NO]
-  Možemo!: [NO]
+  SDP: NO
+  Možemo!: NO
   MOST: -1
-  Domovinski pokret (DP): [NO]
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 1
   Scandal: 0
@@ -302,25 +302,25 @@
   id: 31
   HDZ: 0
   SDP: 0
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 0
   Scandal: 0
 - url: https://www.dnevno.hr/vijesti/hrvatska/bolan-slom-tomaseviceve-platforme-ovo-nitko-nije-ocekivao-u-novoj-godini-prijeti-im-velika-opasnost-1885824/
   id: 32
-  HDZ: [NO]
+  HDZ: NO
   SDP: 0
-  Možemo!: -2
+  Možemo!: -1
   MOST: 0
-  Domovinski pokret (DP): [NO]
+  Domovinski pokret (DP): NO
   Policy: 1
   Ideological: 0
   Scandal: 1
 - url: https://www.index.hr/vijesti/clanak/za-hrvatsku-je-ovo-bila-izgubljena-godina-ne-zbog-pandemije/2329299.aspx
   id: 33
-  HDZ: -2
+  HDZ: -1
   SDP: -1
   Možemo!: -1
   MOST: -1
@@ -330,31 +330,31 @@
   Scandal: 0
 - url: https://www.jutarnji.hr/vijesti/hrvatska/sandra-bencic-gradit-cemo-stanove-u-zagrebu-i-davati-ih-mladima-u-jeftin-dugogodisnji-najam-15146931
   id: 34
-  HDZ: -2
+  HDZ: -1
   SDP: 0
-  Možemo!: 2
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  Možemo!: 1
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 1
   Ideological: 0
   Scandal: 0
 - url: https://www.index.hr/vijesti/clanak/sdp-kritizirao-vuckovic-zbog-nastupa-na-hrtu-ona-im-sad-odgovorila/2334067.aspx
   id: 35
   HDZ: -1
-  SDP: -2
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  SDP: -1
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 1
   Ideological: 0
   Scandal: 0
 - url: https://www.jutarnji.hr/vijesti/hrvatska/varazdin-postaje-prvi-grad-koji-financira-rad-psihologa-u-osnovnim-skolama-koje-ih-nemaju-15152724
   id: 36
   HDZ: -1
-  SDP: 2
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  SDP: 1
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 0
   Scandal: 0
@@ -362,19 +362,19 @@
   id: 37
   HDZ: 0
   SDP: 0
-  Možemo!: [NO]
+  Možemo!: NO
   MOST: 0
-  Domovinski pokret (DP): -2
+  Domovinski pokret (DP): -1
   Policy: 0
   Ideological: 0
   Scandal: 0
 - url: https://www.24sata.hr/kolumne/maskare-su-prosle-a-miroslav-skoro-svejedno-glumi-orbana-678847
   id: 38
   HDZ: 0
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
-  Domovinski pokret (DP): -2
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
+  Domovinski pokret (DP): -1
   Policy: 0
   Ideological: 1
   Scandal: 0
@@ -382,7 +382,7 @@
   id: 39
   HDZ: -1
   SDP: 1
-  Možemo!: [NO]
+  Možemo!: NO
   MOST: -1
   Domovinski pokret (DP): 1
   Policy: 0
@@ -401,9 +401,9 @@
 - url: https://www.index.hr/vijesti/clanak/ovo-je-tip-koji-je-danas-uz-prijetnju-bombom-upao-u-skolu-i-trazio-hdzovog-zupana/2258954.aspx
   id: 41
   HDZ: 0
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
   Domovinski pokret (DP): 0
   Policy: 0
   Ideological: 1
@@ -411,19 +411,19 @@
 - url: https://net.hr/danas/vijesti/jandrokovic-skoro-ce-i-u-zagrebu-nastaviti-gubitnicki-niz-nije-mi-jasno-zasto-ulazi-u-vec-izgubljene-bitke-317f0922-b9f4-11ec-9fb6-0242ac13001c
   id: 42
   HDZ: 0
-  SDP: [NO]
-  Možemo!: [NO]
-  MOST: [NO]
+  SDP: NO
+  Možemo!: NO
+  MOST: NO
   Domovinski pokret (DP): -1
   Policy: 0
   Ideological: 0
   Scandal: 0
 - url: https://www.jutarnji.hr/vijesti/zagreb/tomasevic-upozorio-na-urbanisticki-kaos-u-trnju-komentirao-i-skorinu-kandidaturu-15055730
   id: 43
-  HDZ: [NO]
-  SDP: [NO]
+  HDZ: NO
+  SDP: NO
   Možemo!: 1
-  MOST: [NO]
+  MOST: NO
   Domovinski pokret (DP): 0
   Policy: 1
   Ideological: 0
@@ -441,16 +441,16 @@
 - url: https://www.index.hr/vijesti/clanak/tomasevic-tesko-optuzen-mozemo-suti-analiticar-njima-odluke-sapcu-prijatelji/2309243.aspx
   id: 45
   HDZ: 0
-  SDP: [NO]
-  Možemo!: -2
-  MOST: [NO]
+  SDP: NO
+  Možemo!: -1
+  MOST: NO
   Domovinski pokret (DP): 0
   Policy: 1
   Ideological: 1
   Scandal: 1
 - url: https://direktno.hr/domovina/grbin-hdz-ako-ste-face-raspisite-izbore-grmoja-jasno-da-presuda-fimi-mediju-drzana-ladici-mjesecima-247406/
   id: 46
-  HDZ: -2
+  HDZ: -1
   SDP: 0
   Možemo!: 0
   MOST: 0
@@ -472,7 +472,7 @@
   id: 48  # TODO ovaj clanak je posebno zanimljiv jer za svaku stranku ima pro statement od njezine clana i kontra statement od clana druge stranke kao odgovor na to
   HDZ: 0
   SDP: 0
-  Možemo!: [NO]
+  Možemo!: NO
   MOST: 0
   Domovinski pokret (DP): -1
   Policy: 1
@@ -480,9 +480,9 @@
   Scandal: 0
 - url: https://www.telegram.hr/politika-kriminal/veliki-intervju-sa-sandrom-bencic-hdz-ne-moze-imati-stabilnu-vladu-njihove-ljude-povuce-koruptivna-hobotnica-i-zavrse-u-remetincu/
   id: 49
-  HDZ: -2
+  HDZ: -1
   SDP: -1
-  Možemo!: 2
+  Možemo!: 1
   MOST: -1
   Domovinski pokret (DP): 0
   Policy: 1
@@ -490,11 +490,11 @@
   Scandal: 1
 - url: https://www.index.hr/vijesti/clanak/antifasisti-nije-vracen-neposteno-oduzet-naziv-trgu-marsala-tita-biraci-prevareni/2412772.aspx
   id: 50
-  HDZ: [NO]
+  HDZ: NO
   SDP: 1
   Možemo!: -1
-  MOST: [NO]
-  Domovinski pokret (DP): [NO]
+  MOST: NO
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 1
   Scandal: 0
