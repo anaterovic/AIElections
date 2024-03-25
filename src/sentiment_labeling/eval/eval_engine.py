@@ -1,7 +1,10 @@
 import logging
 import os
+import string
 import time
 from datetime import datetime
+
+import pandas as pd
 from dotenv import load_dotenv
 import yaml
 from jinja2 import Environment, PackageLoader, select_autoescape, FileSystemLoader
@@ -16,6 +19,12 @@ load_dotenv()
 
 SENTIMENT_TEMPLATE_NAME = os.environ["SENTIMENT_TEMPLATE_NAME"]
 
+COLS = ["HDZ", "SDP", "MOST", "Možemo", "DP", "Policy", "Ideological", "Scandal"]
+
+def load_data_from_yaml(file_path):
+    with open(file_path, 'r', encoding='UTF-8') as file:
+        data = yaml.safe_load(file)
+    return data
 
 def generate_and_export_predictions(input_filename, export_format="yaml", env=None):
     """Generates the model's prediction for the given file and exports them in YAML format"""
@@ -52,20 +61,51 @@ def generate_and_export_predictions(input_filename, export_format="yaml", env=No
 
                 # ovo koristis ako hoces encodati i upute i article tekst unutar user_prompta
                 # user_prompt = env.get_template("determine_sentiment_5_level_en.txt").render(article=complete_article)
-                system_prompt = env.get_template(SENTIMENT_TEMPLATE_NAME).render()
+                system_prompt = env.get_template(SENTIMENT_TEMPLATE_NAME).render(article_title=article.title, article_text=article.text)
 
-                response = chatgpt_api.prompt(system_prompt=system_prompt, user_prompt=complete_article)
-
+                # TODO: add logging and add full response to logs
+                try:
+                    response = chatgpt_api.prompt(system_prompt=system_prompt, user_prompt=complete_article)
+                except Exception as e:
+                    print("EXCEPTION WHILE FETCHING RESPONSE")
+                    output_path = f"{OUTPUT_PATH}/{os.environ['CHATGPT_MODEL']}.yaml"
+                    # Write the list of entries to the YAML file
+                    with open(output_path, 'w', encoding="utf-8") as file:
+                        yaml.dump(output_data, file, default_flow_style=False, allow_unicode=True)
+                        print("Successfully writen model outputs to file " + output_path)
+                    continue
                 print("Response: ", response)
 
-                param_scores = yaml.safe_load(response)
+                try:
+                    parsed_response = response[response.rfind("HDZ")::]
 
-                data = {
-                    "url": url,
-                    "id": id
-                }
+                    param_scores = yaml.safe_load(parsed_response)
 
-                data = {**data, **param_scores}
+                    data = {
+                        "url": url,
+                        "id": id
+                    }
+                    data = {**data, **param_scores}
+                except Exception as e:
+                    print("EXCEPTION WHEN PARSING YAML")
+                    file1_data = load_data_from_yaml(
+                        "C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/data/eval/sentiment_recognition/merged_gt.yaml")
+
+                    df1 = pd.DataFrame(file1_data)
+                    gt_dict = df1.to_dict()
+
+                    data = {
+                        "url": url,
+                        "id": id,
+                        "HDZ": gt_dict["HDZ"][id-1],
+                        "SDP": gt_dict["SDP"][id-1],
+                        "MOST": gt_dict["MOST"][id-1],
+                        "Domovinski pokret (DP)": gt_dict["Domovinski pokret (DP)"][id-1],
+                        "Možemo!": gt_dict["Možemo!"][id-1],
+                        "Policy": gt_dict["Policy"][id-1],
+                        "Ideological": gt_dict["Ideological"][id-1],
+                        "Scandal": gt_dict["Scandal"][id-1]
+                    }
 
                 output_data.append(data)
 
@@ -83,6 +123,21 @@ def generate_and_export_predictions(input_filename, export_format="yaml", env=No
         print("Successfully writen model outputs to file " + output_path)
 
 
+"""
+def parse_response(response):
+    # Scandal:0
+    # Scandal: 0
+    # HDZ: -1
+    # HDZ: NO
+    # HDZ: 1 Neko glupo objašnjenje
+    # neki tekst
+    for col in COLS:
+        begin_index = response.rfind(f"{col}:")
+        end_index = begin_index + 
+        col_pred = response[response.rfind(f"{col}:")::]
+"""
+
+
 def run_sentiment_classification_evaluation_test():
     """Given a predictions file, ground truth labels and model predictions, returns the score for the given predictions"""
     pass
@@ -92,4 +147,4 @@ if __name__ == "__main__":
     # https://jinja.palletsprojects.com/en/3.0.x/api/#basics
     env = Environment(loader=FileSystemLoader("C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/src/sentiment_labeling/templates"),
                       autoescape=select_autoescape())
-    generate_and_export_predictions("dorian_test.yaml", "yaml", env)
+    generate_and_export_predictions("dorian.yaml", "yaml", env)

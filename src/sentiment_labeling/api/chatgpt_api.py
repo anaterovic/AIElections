@@ -11,8 +11,7 @@ load_dotenv()
 RUNAAI_SUBSCRIPTION_KEY = os.environ.get("RUNAAI_SUBSCRIPTION_KEY")
 
 class GptModelEnum(str, Enum):
-    GPT_35_TURBO_4K = "gpt-3.5-turbo"
-    GPT_35_TURBO_16K = "gpt-3.5-turbo-16k"
+    GPT_35_TURBO_16K = "gpt-3.5-turbo"
     GPT_4_8K = "gpt-4"
     GPT_4_32K = "gpt-4-32k"
     YUGO_GPT = "yugogpt"
@@ -33,13 +32,13 @@ def get_response(prompt_token_size, temperature, max_response_size, messages, ti
     model = os.environ["CHATGPT_MODEL"]
 
     if model == "GPT-3.5":
-        if prompt_token_size > 4000:
-            raise NotImplementedError("Error - input texts with more than 4000 tokens are not supported by currently available models")
+        if prompt_token_size < 16000:
+            selected_model = GptModelEnum.GPT_35_TURBO_16K
         else:
-            selected_model = GptModelEnum.GPT_35_TURBO_4K
+            raise NotImplementedError("Error - context windows longer than 16K tokens are not supported by GPT-3.5 model")
     elif model == "GPT-4":
         if prompt_token_size > 8000:
-            raise NotImplementedError("Error - input texts with more than 4000 tokens are not supported by currently available models")
+            raise NotImplementedError("Error - input texts with more than 8000 tokens are not supported by currently available models")
         else:
             selected_model = GptModelEnum.GPT_4_8K
     elif model == "YUGO_GPT":

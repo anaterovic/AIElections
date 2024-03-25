@@ -16,7 +16,7 @@
   MOST: NO
   Domovinski pokret (DP): NO
   Policy: 0
-  Ideological:
+  Ideological: 0
   Scandal: 1
 - url: https://dnevnik.hr/vijesti/hrvatska/hdz-nakon-izlaska-dvoje-clanova-iz-kluba-domovinskog-pokreta-sve-vise-hrvatskih-ljudi-shvaca-da-su-skoro-i-njegov-pokret-fejk---634818.html
   id: 3
@@ -125,9 +125,9 @@
   Možemo!: 1
   MOST: NO
   Domovinski pokret (DP): NO
-  Policy:
-  Ideological:
-  Scandal:
+  Policy: 1
+  Ideological: 0
+  Scandal: 0
 - url: https://direktno.hr/direkt/plenkovic-cestitao-covicu-rodendan-sestrinske-stranke-141712/
   id: 14
   HDZ: 1
@@ -424,7 +424,7 @@
   SDP: 0
   Možemo!: NO
   MOST: NO
-  Domovinski pokret (DP): 2
+  Domovinski pokret (DP): 1
   Policy: 1
   Ideological: 0
   Scandal: 0

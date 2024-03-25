@@ -1,37 +1,25 @@
-I want you to act as a political news sentiment classifier. I will provide you with the names of political parties and an article text. I need you to classify the sentiment of the text towards each party. The text will be in Croatian. If there's no mention of the party, reply with [NO].
-Classify the sentiment into ONE of the 3 sentiment categories: -1, 0, 1. Each category number represents the positivity of the sentiment; -1 represents negative
-sentiment, 0 neutral sentiment and 1 positive sentiment. When deciding on a sentiment, pretend you're an average reader with average political knowledge and try to imagine how would the article
-influence your opinion on the party. Pay special focus to the title of the article as it often has a larger impact on the sentiment compared to the rest of the text.
+As a political news sentiment classifier, your task is to analyze Croatian articles for sentiment towards specific parties - HDZ, SDP, MOST, Možemo, Domovinski pokret (DP), using -1 for negative, 0 for neutral, 1 for positive. No mention results in 'NO'. Prioritize the title for sentiment cues.
 
-Output your predictions using the following format:
-Party 1: sentiment
-Party 2: sentiment
-...
+Also categorize the content as 'policy', 'ideological', or 'scandal'. Policy articles discuss party or institutional reactions to events (e.g., COVID-19, war), focusing on expertise and governance, touching upon future social/economic issues. Ideological articles cover left/right wing points, excluding economic policies, and include Croatian specifics (war veterans, “HOS”, Yugoslav regime, “UDBA”, Russian influence). Scandal articles involve public official misconduct, including personal scandals.
 
-Party names: HDZ, SDP, Možemo!, MOST, Domovinski pokret (DP)
+Consider key members from each party (HDZ: Andrej Plenković, Gordan Jandroković; SDP: Peđa Grbin; MOST: Nikola Grmoja, Nino Raspudić, Miro Bulj; Možemo: Tomislav Tomašević, Sandra Benčić; DP: Ivan Penava, Mario Radić) as representing their parties in articles.
 
-DO NOT FORGET, IF THERE IS NO MENTION OF A CERTAIN POLITICAL PARTY, CLASSIFY IT AS "NO"
+Reflect on your analysis, provide reasoning and evidence for each classification, and note any ambiguities or limitations.
 
-Article text:
+Article:
 
-Nakon što je danas objavljeno kako su iz Kluba Domovinskog pokreta Miroslava Škore izašli saborski zastupnici Milan Vrkljan i nezavisna Karolina Vidović Krišto, o svemu su se oglasili i iz HDZ-a.
+Title: {{ article_title }}
+Text: {{ article_text }}
 
-Iza kulisa Općeg Sabora HDZ-a - 1
-SPREMNI NA IZAZOVE
-Što se odvijalo iza kulisa Općeg sabora HDZ-a: Stigli i koalicijski partneri
-Ljubo Ćesić Rojs odlučio biti na listi dijaspore
-TKO JE JAMIO?
-Rojs se odlučio aktivirati i ići kontra HDZ-a: "Prije bi mi ruka otpala, nego da idem s njima"
-Objavu prenosimo u cijelosti.
-
-"Kako kopni ucjenjivački potencijal Miroslave Škore, kako se postupno razotkriva duboka interesna pozadina 'njegovog' političkog projekta, tako se i topi, iznutra se urušava, Poslovni pokret MŠ. Gospodin Škoro pritom se okrunio titulom šampiona neostvarenih ucjena & neispunjenih najava. Egzaltirano je tvrdio da će na predsjedničkim izborima pobijediti u prvom krugu, kad ono nije ušao ni u drugi.
-
-Nakon toga je frenetično uvjeravao Hrvate da će postati premijer, da bi ubrzo - svjestan da su njegova pretjerivanja već podosta naporna - počeo postavljati ultimatume tko će ili neće iz HDZ-a biti predsjednik Vlade. Kad ono - opet nula bodova.
-
-Tako je i ovih zadnjih dana, očito i dalje frustriran izbornim porazom, grmio da POSPOK prerasta u 'vodeću snagu'. Kad ono - spao je s početnih 16 saborskih mjesta na današnjih 10. Ako nastave tim užurbanim tempom, POSPOK će negdje na polovici mandata spasti na 3-4 zastupnika.
-
-I uopće ne brinite, i tada će g. Škoro, kao što je činio i prije, za sve svoje posrtaje tražiti krivce u drugima: za predsjedničke izbore tvrdio je (doduše, kraće vrijeme) da je 'prevaren'; za njegov poraz na parlamentarnim izborima bila je kriva 'nezrelost naroda'; sada pak štetu zbog bijega dvoje svojih zastupnika taj samoproglašeni patriotski velikan pokušava iskontrolirati novim lažnim optužbama na račun HDZ-a.
-
-I to na način da okrivljuje HDZ za bijeg zastupnika koje je sam odabrao - baš onih dvoje koji su se "proslavili" serijom izmišljotina, širenjem laži i iznošenjem mržnje protiv HDZ-a.
-
-No istina je jednostavna: sve više hrvatskih ljudi shvaćaju da su g. Škoro i njegov pokret fejk i da puno više predstavljaju interesne lobije umjesto naroda na koji se tako često pozivaju."
+Format your output strictly like this and do not output anything else before nor after:
+###
+Rationale: <ALL RATIONALE AND EXPLANATIONS>
+HDZ: <SENTIMENT>
+SDP: <SENTIMENT>
+MOST: <SENTIMENT>
+Možemo: <SENTIMENT>
+DP: <SENTIMENT>
+Policy: <1 IF PRESENT, 0 OTHERWISE>
+Ideological:  <1 IF PRESENT, 0 OTHERWISE>
+Scandal:  <1 IF PRESENT, 0 OTHERWISE>
+###

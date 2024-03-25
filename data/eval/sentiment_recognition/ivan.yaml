@@ -34,7 +34,7 @@
   SDP: NO
   Možemo!: NO
   MOST: 0
-  Domovinski pokret (DP):
+  Domovinski pokret (DP): NO
   Policy: 0
   Ideological: 1
   Scandal: 0
@@ -104,7 +104,7 @@
   SDP: -1
   Možemo!: NO
   MOST: 1
-  Domovinski pokret (DP):  -1
+  Domovinski pokret (DP): -1
   Policy: 1
   Ideological: 0
   Scandal: 1
@@ -164,7 +164,7 @@
   SDP: +1
   Možemo!: NO
   MOST: NO
-  Domovinski pokret (DP):  NO
+  Domovinski pokret (DP): NO
   Policy: 1
   Ideological: 1
   Scandal: 0
@@ -464,7 +464,7 @@
   SDP: -1
   Možemo!: -1
   MOST: -1
-  Domovinski pokret (DP):  -1
+  Domovinski pokret (DP): -1
   Policy: 1
   Ideological: 0
   Scandal: 0
