@@ -1,0 +1,65 @@
+2. grupirati po 1) adresa BM (nekad je adresa ista ali se promijenila ucionica u školi pa je lokacija BM onda razlicita) ili ako to ne uspije po 2) lokaciji BM (mozda je jedna adresa recimo sa brojem a druga BB). Tada treba postaviti iste naziv, adresu i lokaciju BM (najbolje na one iz 2020. godine) (primjer DUBROVNIK, LIPIK, MEDULIN). Ovdje mozda paziti da barem grad/općina budu isti ili sadrze jedno drugo u sebi da nebi mapirali neka skroz razlicita mjesta koja imaju istu lokaciju recimo vatrogasni dom.
+3. nekad je adresa Miroslava Krleže, nekad M. Krleže. Ovo je ubojito u kombinaciji kad je i lokacija BM s jedne strane ...prostorija 4 a s druge ...prostorija IV
+4. identificirat sve moguce kombinacije hrvatsko-talijanskih imena (ROVINJ - RIVIGNO npr.) i promijenit ih u samo hrvatsko. Pazit na kombinacije X-Y, X - Y, XY. Ovdje će se recimo za PULA- POLA dogodit da će se po nazivu BM moći mapirati sada dosta njih jer se zovu PULA(POLA) BIRAČKO MJESTO X. Trebamo li mehanizam da provjerimo da se nisu mijenjali tijekom godina i da isti brojevi i dalje odgovaraju istim BM-ovima?
+6. DUGO SELO je jako naraslo u broju stanovnika cini se. To mi mozda sve trebalo spojit, ne vidim drugi način, velika je razlika u broju glasača u 16. i 20.
+8. ako se ne da spojiti po nazivu BM sve skupa kao preostali i onda stavit kao jedno BM, moze se napraviti za ove kaj su preostali u grad/općina. Primjer: GVOZD, KUMROVEC, LIŽNJAN. Kod malih mjesta bi to mogli biti okej.
+
+
+
+x. na kraju mergati ove kaj su preostali po nazivu BM bez obzira sto su preko 2000 ili koliki vec nam bude limit
+...ILI...
+ostaviti i rucno gledati ako ih bude dovoljno malo (a mogli bi)
+
+
+
+
+ZA REGEX:
+-----------------------------------------
+UCIONICA BROJ \d -> UČIONICA
+UCIONICA \d -> UČIONICA
+ZVIJERCI I/II -> ZVIJERCI
+OSNOVNA ŠKOLA I/II -> OSNOVNA ŠKOLA
+DOM UMIRVLJENIKA I/II -> DOM UMIROVLJENIKA
+DOM U HRGOVLJANIMA I/II -> DOM U HRGOVLJANIMA
+MO STJEPAN RADIĆ I/II -> MO STJEPAN RADIĆ
+MO BAN J JELAČIĆ  I/II -> MO BAN J JELAČIĆ
+MO DR A STARČEVIĆA  I/II -> MO DR A STARČEVIĆA
+MO A G MATOŠ -> MO AG MATOŠ
+UGOSTITELJSKA ŠKOLA NOVI SREDNJOŠKOLSKI CENTAR -> UGOSTITELJSKA ŠKOLA
+MEDICINSKA ŠKOLA NOVI SREDNJOŠKOLSKI CENTAR -> MEDICINSKA ŠKOLA
+VISOKA TEHNIČKA ŠKOLA -> VELEUČILIŠTE U BJELOVARU I
+VISOKO UČILIŠTE -> VELEUČILIŠTE U BJELOVARU II
+FIORINIFIORINI -> FIORINI
+NOVA VASVILLANOVA -> NOVA VAS
+KAŠTELCASTELVENERE -> KAŠTEL
+KRASICACRASSIZA -> KRASICA
+KRŠETECARSETTE -> KRŠETE
+MARUŠIĆIMARUSSICI -> MARUŠIĆI
+MOMJANMOMIANO -> MOMJAN
+TRIBANTRIBANO -> TRIBAN
+OSNOVNA ŠKOLA MATE BALOTA BUJESCUOLA ELEMENTARE MATE BALOTA BUIE -> OSNOVNA ŠKOLA MATE BALOTA BUJE
+OSNOVNA ŠKOLA KAŠTELSCUOLA ELEMENTARE CASTELVENERE -> OSNOVNA ŠKOLA KAŠTEL
+DRUŠTVENI DOMCENTRO SOCIALE -> DRUŠTVENI DOM
+OSNOVNA ŠKOLA KRŠETESCUOLA ELEMENTARE CARSETTE -> OSNOVNA ŠKOLA KRŠETE
+DRUŠTVENI DOM MARUŠIĆICENTRO SOCIALE MARUSSICI -> DRUŠTVENI DOM MARUŠIĆI
+OSNOVNA ŠKOLA MOMJANSCUOLA ELEMENTARE MOMIANO -> OSNOVNA ŠKOLA MOMJAN
+PROSTORIJA I/II/1/2 -> PROSTORIJA
+DOO -> delete completely
+GROŽNJANGRISIGNANA -> GROŽNJAN
+ŠTERNASTERNA -> ŠTERNA
+
+
+
+
+
+
+
+TALIJANSKA IMENA:
+-----------------------------------------
+BRTONIGLA - VERTENEGLIO
+NOVA VASVILLANOVA -> NOVA VAS
+BUJE - BUIE
+NOVIGRAD - CITTANOVA
+PULA - POLA
+ROVINJ - ROVIGNO
+UMAG - UMAGO
