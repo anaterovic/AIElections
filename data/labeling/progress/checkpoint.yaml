@@ -1,0 +1,15 @@
+24sata.hr:
+    finished: false
+    latest_processed_date: None
+index.hr:
+    finished: false
+    latest_processed_date: None
+dnevnik.hr:
+    finished: false
+    latest_processed_date: None
+jutarnji.hr:
+    finished: false
+    latest_processed_date: None
+vecernji.hr:
+    finished: false
+    latest_processed_date: None

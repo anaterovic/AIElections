@@ -1,0 +1,59 @@
+Run1:
+Column: Domovinski pokret (DP), fleiss kappa: 0.6563573883161511
+Column: HDZ, fleiss kappa: 0.6503496503496503
+Column: Ideological, fleiss kappa: 0.1978609625668449
+Column: MOST, fleiss kappa: -0.030927835051546785
+Column: Možemo!, fleiss kappa: 0.6456413890857549
+Column: Policy, fleiss kappa: 0.3006993006993006
+Column: SDP, fleiss kappa: 0.7347480106100793
+Column: Scandal, fleiss kappa: 0.5199999999999999
+
+Run2:
+Column: Domovinski pokret (DP), fleiss kappa: 1.0
+Column: HDZ, fleiss kappa: 0.6503496503496503
+Column: Ideological, fleiss kappa: 0.1406603346901853
+Column: MOST, fleiss kappa: -0.030927835051546785
+Column: Možemo!, fleiss kappa: 0.7023809523809527
+Column: Policy, fleiss kappa: 0.26595143986448344
+Column: SDP, fleiss kappa: 0.7347480106100793
+Column: Scandal, fleiss kappa: 0.6266666666666666
+
+Run3:
+Column: Domovinski pokret (DP), fleiss kappa: 0.7894736842105263
+Column: HDZ, fleiss kappa: 0.6503496503496503
+Column: Ideological, fleiss kappa: 0.39236111111111105
+Column: MOST, fleiss kappa: 0.4791666666666661
+Column: Možemo!, fleiss kappa: 0.8511904761904762
+Column: Policy, fleiss kappa: 0.4172494172494173
+Column: SDP, fleiss kappa: 0.7347480106100793
+Column: Scandal, fleiss kappa: 0.5199999999999999
+
+Run4:
+Column: Domovinski pokret (DP), fleiss kappa: 1.0
+Column: HDZ, fleiss kappa: 0.6249999999999998
+Column: Ideological, fleiss kappa: 0.21875
+Column: MOST, fleiss kappa: 0.4791666666666661
+Column: Možemo!, fleiss kappa: 0.8511904761904762
+Column: Policy, fleiss kappa: 0.4172494172494173
+Column: SDP, fleiss kappa: 0.7347480106100793
+Column: Scandal, fleiss kappa: 0.4517543859649124
+
+Run5:
+Column: Domovinski pokret (DP), fleiss kappa: 1.0
+Column: HDZ, fleiss kappa: 0.6503496503496503
+Column: Ideological, fleiss kappa: 0.3333333333333333
+Column: MOST, fleiss kappa: -0.030927835051546785
+Column: Možemo!, fleiss kappa: 0.7647058823529411
+Column: Policy, fleiss kappa: 0.4172494172494173
+Column: SDP, fleiss kappa: 0.7347480106100793
+Column: Scandal, fleiss kappa: 0.6047430830039526
+
+Average:
+Column: Domovinski pokret (DP), Average: 0.8891662145053354
+Column: HDZ, Average: 0.6452797202797202
+Column: Ideological, Average: 0.2565931483402949
+Column: MOST, Average: 0.17310996563573836
+Column: Možemo!, Average: 0.7630218352401202
+Column: Policy, Average: 0.36367979846240717
+Column: SDP, Average: 0.7347480106100793
+Column: Scandal, Average: 0.5446328271271063

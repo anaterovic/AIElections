@@ -1,0 +1,1676 @@
+"C:\Users\dsmoljan\Desktop\AI izbori\parlametrika\venv\Scripts\python.exe" "C:\Users\dsmoljan\Desktop\AI izbori\parlametrika\src\sentiment_labeling\eval\eval_engine.py"
+
+
+Processing article with ID #1
+
+URL:  https://www.24sata.hr/news/plenkovicu-skupi-zetone-zovi-kumove-odrijesi-kesu-i-pokreni-opoziv-treba-li-tebe-opozvati-753604
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative)
+The sentiment towards HDZ in this article is negative. The article criticizes Prime Minister Plenković, who is a key member of HDZ, for various issues such as mishandling the COVID-19 pandemic, poor vaccination rates, lack of progress in post-earthquake reconstruction, and alleged corruption within the government. The tone of the article is accusatory and highlights failures attributed to the ruling party.
+
+SDP: NO
+SDP is not mentioned in the article, so it receives a sentiment label of 'NO'.
+
+MOST: NO
+MOST is not mentioned in the article, so it receives a sentiment label of 'NO'.
+
+Možemo: NO
+Možemo is not mentioned in the article, so it receives a sentiment label of 'NO'.
+
+DP: NO
+DP is not mentioned in the article, so it receives a sentiment label of 'NO'.
+
+Policy: 1
+The article falls under the 'policy' category as it discusses the performance of the government, particularly Prime Minister Plenković, in handling various issues such as the COVID-19 pandemic, vaccination, reconstruction efforts post-earthquake, and the state of the judiciary system.
+
+Refinement: Upon further review, the negative sentiment towards HDZ is clearly evident in the article due to the criticisms directed at Prime Minister Plenković and his government's actions. The focus on policy-related matters and governance failures solidifies the classification of this article as policy-oriented.
+
+###
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #2
+
+URL:  https://www.24sata.hr/news/opet-vidimo-kako-hdz-stiti-i-spasava-svoje-lokalne-serife-740934
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article portrays HDZ in a negative light, highlighting how they protect and save their local leaders despite being involved in scandals and corruption. The party is criticized for not taking action against members like Darko Puljašić and Ivo Žinić, who remain in power despite facing allegations. The sentiment towards HDZ is clearly negative throughout the article.
+SDP: NO - The Social Democratic Party (SDP) is not mentioned in the article.
+MOST: NO - The Bridge of Independent Lists (MOST) is not mentioned in the article.
+Možemo: NO - The Možemo party is not mentioned in the article.
+DP: NO - The Domovinski pokret (DP) is not mentioned in the article.
+Policy: 0
+Ideological: 1 (positive) - The article leans towards an ideological perspective by criticizing the actions of HDZ and its local leaders, portraying them as corrupt and protected by the party. It touches upon the issue of corruption within the party and how it affects governance at the local level.
+Scandal: 1 (positive) - The article focuses on scandals involving HDZ members and how the party's structure protects them from facing consequences for their actions. It highlights instances of corruption and misconduct among local leaders affiliated with HDZ.
+
+Refinement: Upon reevaluation, the sentiment towards HDZ remains negative due to the party's handling of corruption scandals involving its members. The ideological and scandalous nature of the article is clear in criticizing the party's actions and the protection provided to its local leaders.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 0
+Ideological: 1
+Scandal: 1
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '0', 'Ideological': '1', 'Scandal': '1'}
+
+
+Processing article with ID #3
+
+URL:  https://dnevnik.hr/vijesti/hrvatska/hdz-nakon-izlaska-dvoje-clanova-iz-kluba-domovinskog-pokreta-sve-vise-hrvatskih-ljudi-shvaca-da-su-skoro-i-njegov-pokret-fejk---634818.html
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article portrays HDZ in a negative light, accusing Miroslav Škoro and his party of being fake and representing interest groups rather than the people. The language used is critical and dismissive towards HDZ, suggesting that more Croatian people are realizing the true nature of Škoro and his movement.
+SDP: NO - SDP is not mentioned in the article.
+MOST: NO - MOST is not mentioned in the article.
+Možemo: NO - Možemo is not mentioned in the article.
+DP: 1 (positive) - The article is written from the perspective of Domovinski pokret (DP), defending their position and criticizing Miroslav Škoro. Therefore, the sentiment towards DP is positive.
+Policy: 0 - The article does not focus on policy matters but rather on internal party dynamics and criticism.
+Ideological: 1 (present) - The article touches upon the ideological differences between HDZ and Domovinski pokret, highlighting the perception of Škoro's party as fake and representing interest groups.
+Scandal: 0 - There are no scandalous elements mentioned in the article.
+
+Refinement: Upon further reflection, the sentiment towards HDZ is indeed negative due to the strong criticism and accusations made in the article. The positive sentiment towards DP is clear from the defense presented in the text.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: 1
+Policy: 0
+Ideological: 1
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': '1', 'Policy': '0', 'Ideological': '1', 'Scandal': '0'}
+
+
+Processing article with ID #4
+
+URL:  https://www.index.hr/vijesti/clanak/jandrokovic-akcija-bljesak-je-slomila-kraljeznicu-velike-srbije/2272905.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1 (positive) - Gordan Jandroković, a key member of HDZ, is prominently featured in the article, praising the VRO Bljesak operation and honoring Croatian heroes. The article highlights the significance of the operation in breaking the backbone of the Greater Serbia project, aligning with the patriotic narrative often associated with HDZ.
+SDP: NO - The Social Democratic Party (SDP) is not mentioned in the article.
+MOST: 0 (neutral) - While Nikola Grmoja, a member of MOST, is mentioned in the article as part of the delegation, there is no specific sentiment expressed towards MOST or its members.
+Možemo: NO - Možemo is not mentioned in the article.
+DP: NO - Domovinski pokret (DP) is not mentioned in the article.
+Policy: 1 - The article discusses the commemoration of the VRO Bljesak operation and the importance of honoring Croatian heroes, which can be considered a policy-related topic related to the history and defense of Croatia.
+Ideological: 1 - The article touches upon the patriotic narrative of defending Croatia's sovereignty and freedom, aligning with the ideological stance often associated with right-wing parties like HDZ.
+Scandal: 0 - There are no mentions of any scandalous activities in the article.
+
+Refinement: Upon further review, the sentiment towards HDZ is clear due to Jandroković's statements and the overall patriotic tone of the article. The absence of mentions of other parties reinforces the initial classifications made.
+
+###
+FINAL RESULTS
+HDZ: 1
+SDP: NO
+MOST: 0
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 1
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': 'NO', 'MOST': '0', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '1', 'Scandal': '0'}
+
+
+Processing article with ID #5
+
+URL:  https://www.24sata.hr/news/europska-federacija-novinara-osudila-plenkoviceve-izjave-765480
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article criticizes Prime Minister Andrej Plenković, a key member of HDZ, for his verbal attacks on journalists and media outlets. The European Federation of Journalists (EFJ) condemned his behavior, stating that his actions undermine the credibility of journalists and limit citizens' access to objective information. Plenković is portrayed in a negative light in this context.
+SDP: NO - The Social Democratic Party (SDP) is not mentioned in the article.
+MOST: NO - The Bridge of Independent Lists (MOST) is not mentioned in the article.
+Možemo: NO - The political platform Možemo is not mentioned in the article.
+DP: NO - The Homeland Movement (DP) is not mentioned in the article.
+
+Policy: 1 (policy) - The article focuses on the reactions of the European Federation of Journalists and other journalist organizations to Prime Minister Plenković's behavior towards the media. It discusses the importance of media freedom and the role of journalists in providing objective information to the public.
+
+Refinement: Upon further review, the sentiment towards HDZ could also be interpreted as neutral rather than negative, as the article mainly highlights the criticism towards Plenković's actions and does not delve into broader negative aspects of the party itself.
+
+###
+
+FINAL RESULTS
+HDZ: 0
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '0', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #6
+
+URL:  https://www.24sata.hr/news/novi-predsjednik-skupstine-licko-senjske-zupanije-je-kustic-768150
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1 - The article mentions HDZ multiple times in a positive context, highlighting the election of HDZ's Marijan Kustić as the president of the Županijska skupština Ličko-senjske županije.
+SDP: 0 - SDP is mentioned briefly with only one representative in the Županijska skupština, but there is no sentiment expressed towards the party.
+MOST: NO - MOST is not mentioned in the article.
+Možemo: NO - Možemo is not mentioned in the article.
+DP: 0 - Domovinski pokret is mentioned with one representative in the Županijska skupština, but there is no sentiment expressed towards the party.
+
+Policy: 1 - The article discusses the election of the president and vice president of the Županijska skupština, which is a policy-related event.
+Ideological: 0 - There are no mentions of ideological points or specific political beliefs in the article.
+Scandal: 0 - There are no mentions of any scandals or misconduct in the article.
+
+Refinement: Upon further review, the positive sentiment towards HDZ is clear in the article due to the election results and the support from other parties. The lack of mentions and sentiment towards SDP, MOST, Možemo, and DP remains consistent.
+
+###
+FINAL RESULTS
+HDZ: 1
+SDP: 0
+MOST: NO
+Možemo: NO
+DP: 0
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': '0', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': '0', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #7
+
+URL:  https://www.index.hr/vijesti/clanak/hdzovac-tudjman-se-zapravo-cijelog-zivota-pripremao-za-osnivanje-hdza/2284065.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1
+The sentiment towards HDZ in this article is positive. The article celebrates the 32nd anniversary of the founding of the party, highlighting key projects and activities undertaken by the party. Key members like Tomo Medved and Andrej Plenković are mentioned in a positive light, emphasizing the party's achievements and future plans.
+
+SDP: NO
+There is no mention of the SDP in the article, so the sentiment towards the party is labeled as 'NO'.
+
+MOST: NO
+Similarly, there is no reference to MOST in the article, so the sentiment towards the party is labeled as 'NO'.
+
+Možemo: NO
+Možemo is not mentioned in the article, so the sentiment towards the party is labeled as 'NO'.
+
+DP: NO
+There is no mention of Domovinski pokret (DP) in the article, so the sentiment towards the party is labeled as 'NO'.
+
+Policy: 1
+The article focuses on policy-related topics such as the completion of infrastructure projects, entry into the eurozone, and discussions on the budget. It touches upon governance issues and future plans of the ruling party, indicating a policy-oriented content.
+
+Refinement:
+Upon further review, the sentiment towards HDZ remains positive, as the article predominantly highlights the party's achievements and future plans. The absence of mentions of other parties like SDP, MOST, Možemo, or DP further solidifies the initial classifications.
+
+###
+FINAL RESULTS
+HDZ: 1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #8
+
+URL:  https://www.24sata.hr/news/u-plenkovicevu-mandatu-hdz-pobjeduje-jer-rjesava-probleme-770261
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1
+The sentiment towards HDZ in the article is positive. Minister Božinović, a key member of HDZ, is quoted praising the party's governance under the leadership of President Andrej Plenković. He mentions that despite criticism from President Milanović, HDZ continues to win elections and enjoys significant support from Croatian citizens. Božinović also highlights that the government is actively addressing issues, indicating a positive sentiment towards HDZ.
+
+SDP: -1
+There is a negative sentiment towards SDP in the article. Minister Božinović responds to President Milanović's criticism of HDZ by stating that despite such comments, HDZ remains successful. This implies a contrast between the negative view of SDP and the positive view of HDZ presented in the article.
+
+MOST: NO
+There is no mention of MOST in the article, so the sentiment towards the party is labeled as 'NO'.
+
+Možemo: NO
+There is no mention of Možemo in the article, so the sentiment towards the party is labeled as 'NO'.
+
+DP: NO
+There is no mention of Domovinski pokret (DP) in the article, so the sentiment towards the party is labeled as 'NO'.
+
+Policy: 1
+The article primarily focuses on policy-related issues such as the selection process for the President of the Supreme Court, the epidemiological situation in relation to the tourism season, and assistance to the Czech Republic after a tornado. These topics involve governance, decision-making processes, and future implications, indicating a policy-related categorization.
+
+Ideological: 0
+There are no explicit mentions of left/right-wing ideologies or specific Croatian political aspects in the article. The content revolves around practical governance and responses to current events rather than ideological debates.
+
+Scandal: 0
+There are no references to public official misconduct or personal scandals in the article. The focus is on policy matters and government responses to various situations.
+
+###
+
+Refinement: Upon reviewing the article and the initial evaluation, the sentiment classifications remain accurate. The positive sentiment towards HDZ and the negative sentiment towards SDP are well-supported by Minister Božinović's statements. The absence of mentions of MOST, Možemo, and DP aligns with the 'NO' sentiment classifications for these parties. The policy categorization is appropriate given the article's emphasis on governance and decision-making processes.
+
+###
+
+FINAL RESULTS
+HDZ: 1
+SDP: -1
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': '-1', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #9
+
+URL:  https://www.dnevno.hr/vijesti/hrvatska/sjajna-vijest-za-hrvatsku-obavljen-jedan-od-posljednjih-koraka-za-ukidanje-viza-1799181/
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1 (positive) - The article mentions Prime Minister Andrej Plenković's immediate gratitude towards the US Secretary of State for nominating Croatia for the Visa Waiver Program, highlighting it as a significant step towards visa-free travel for Croatian citizens. This positive sentiment is reinforced by the emphasis on the strong relationship between the US and Croatia.
+SDP: NO - The Social Democratic Party (SDP) is not mentioned in the article.
+MOST: NO - The Bridge of Independent Lists (MOST) is not mentioned in the article.
+Možemo: NO - The Možemo party is not mentioned in the article.
+DP: NO - The Domovinski pokret (DP) is not mentioned in the article.
+Policy: 1 - The article focuses on the policy aspect of Croatia's nomination for the Visa Waiver Program, highlighting the efforts of the Croatian government and relevant ministries in meeting the necessary criteria for visa exemption.
+Ideological: 0 - There are no mentions of left/right-wing points or Croatian-specific ideological issues in the article.
+Scandal: 0 - There are no references to public official misconduct or personal scandals in the article.
+
+Refinement: The initial analysis correctly identified the positive sentiment towards HDZ and the policy focus of the article. Since there were no mentions of other political parties or ideological content, the initial classifications remain valid.
+
+###
+FINAL RESULTS
+HDZ: 1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #10
+
+URL:  https://www.index.hr/vijesti/clanak/beljak-napao-sdp/2294822.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1 (positive) - The article mentions HDZ in a positive light, discussing their coalition with HSS in Zagrebačka županija. The statement by Kreso Beljak indicates a positive relationship between the two parties at the local level.
+SDP: -1 (negative) - SDP is criticized in the article for their coalition with HDZ in some cities and counties. Beljak mentions that SDP, Most, and Domovinski pokret are seen as more unacceptable partners compared to HDZ, labeling them as extreme right-wing.
+MOST: NO - MOST is not mentioned in the article.
+Možemo: NO - Možemo is not mentioned in the article.
+DP: NO - Domovinski pokret is not mentioned in the article.
+
+Policy: 1 - The article discusses the political dynamics and coalitions at the local level, specifically in Zagrebačka županija, indicating a policy-related content.
+Ideological: 1 - The article touches upon the ideological differences between parties, mentioning the left-right spectrum and the perception of certain parties as extreme right-wing.
+Scandal: 0 - There are no mentions of any scandalous behavior or misconduct in the article.
+
+Refinement: Upon further review, the sentiment towards HDZ is indeed positive due to the positive portrayal of their coalition with HSS. The criticism towards SDP is clear, labeling them negatively for their alliances with HDZ. The absence of mentions of MOST, Možemo, and Domovinski pokret remains consistent.
+
+###
+FINAL RESULTS
+HDZ: 1
+SDP: -1
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 1
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': '-1', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '1', 'Scandal': '0'}
+
+
+Processing article with ID #11
+
+URL:  https://sibenski.slobodnadalmacija.hr/sibenik/vijesti/hrvatska-i-svijet/u-domovinskom-pokretu-su-kovali-velike-planove-a-onda-se-posvadili-zbog-para-i-zena-1118479
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative)
+The article mentions HDZ in a negative light, accusing them of betraying Croatia and attacking Andrej Plenković. The sentiment towards HDZ is clearly negative throughout the article.
+
+SDP: NO
+SDP is not mentioned in the article.
+
+MOST: NO
+MOST is not mentioned in the article.
+
+Možemo: NO
+Možemo is not mentioned in the article.
+
+DP: 1 (positive)
+The article focuses on internal issues within Domovinski pokret, but it does not portray DP in a negative light. Therefore, the sentiment towards DP is considered positive.
+
+Policy: 0
+The article does not focus on policy matters but rather on internal party conflicts and scandals.
+
+Ideological: 0
+The article does not delve into ideological differences but rather focuses on the internal turmoil within Domovinski pokret.
+
+Scandal: 1
+The article revolves around scandalous behavior within Domovinski pokret, including accusations of misusing party funds and internal power struggles.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: 1
+Policy: 0
+Ideological: 0
+Scandal: 1
+###
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': '1', 'Policy': '0', 'Ideological': '0', 'Scandal': '1'}
+
+
+Processing article with ID #12
+
+URL:  https://www.dnevno.hr/vijesti/hrvatska/ni-za-kraljevine-jugoslavije-nije-bilo-ovoliko-zandara-bulj-rafalno-po-stozeru-i-hdz-u-oni-se-rugaju-s-nama-nije-im-ovo-cacino-1802393/
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative)
+The sentiment towards HDZ in this article is negative. Miro Bulj, a key member of MOST, criticizes the HDZ-led government and the National Civil Protection Headquarters (Stožer) for their handling of COVID-19 measures. He accuses them of stealing days from the Alka festival and the Feast of the Assumption, mocking the people, and imposing measures that he associates with fascism. Bulj also expresses frustration over the restrictions on the number of spectators allowed at the Alka festival and the closing time for hospitality establishments, comparing the current police presence to that of the Kingdom of Yugoslavia. These criticisms and comparisons reflect a negative sentiment towards HDZ.
+
+SDP: NO
+There is no mention of SDP in the article, so the sentiment towards the party is labeled as 'NO'.
+
+MOST: 1 (positive)
+The sentiment towards MOST in this article is positive. Miro Bulj, a key member of MOST, is vocal in his criticism of the government and the COVID-19 measures imposed by the National Civil Protection Headquarters. He expresses frustration over the restrictions on public events and hospitality establishments, highlighting the impact on the Alka festival. Bulj's strong stance against the government's decisions indicates a positive sentiment towards MOST.
+
+Možemo: NO
+There is no mention of Možemo in the article, so the sentiment towards the party is labeled as 'NO'.
+
+DP: NO
+There is no mention of Domovinski pokret (DP) in the article, so the sentiment towards the party is labeled as 'NO'.
+
+Policy: 1
+The content of the article falls under the policy category as it discusses the COVID-19 measures implemented by the government, particularly related to public events and hospitality establishments. The criticism from Miro Bulj towards the National Civil Protection Headquarters reflects a policy-focused discussion on the impact of these measures.
+
+Ideological: 0
+There are no specific ideological points discussed in the article related to left/right-wing perspectives or Croatian-specific issues. The focus is primarily on the criticism of COVID-19 measures and government decisions.
+
+Scandal: 0
+The article does not involve any public official misconduct or personal scandals, so it does not fall under the scandal category.
+
+###
+
+Refinement:
+Upon further review, the sentiment towards HDZ is more specifically directed at the government's handling of COVID-19 measures rather than the party itself. While the criticism is aimed at the HDZ-led government, it is important to differentiate between the government's actions and the party as a whole. Additionally, the absence of mentions of other political parties limits the scope of sentiment analysis in the article.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: 1
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': '1', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #13
+
+URL:  https://www.index.hr/vijesti/clanak/jedini-koji-mogu-biti-zadovoljni-hrvatskom-politikom-su-hdz-i-plenkovic/2425365.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1 (positive) - The article mentions HDZ and Plenković in a positive light, highlighting their political survival despite scandals and ineffective opposition. It praises their strategic positioning of Croatia in the international arena and their ability to maintain parliamentary majority.
+SDP: NO - The article does not mention SDP.
+MOST: NO - The article does not mention MOST.
+Možemo: 1 (positive) - Možemo is mentioned positively in the article for their grassroots activism and successful election in Zagreb, contrasting them with the ineffective opposition.
+DP: NO - The article does not mention Domovinski pokret.
+Policy: 1 - The article discusses Croatia's strategic positioning in the international community, entry into the eurozone and Schengen area, and the need for internal reforms and development.
+Ideological: 1 - The article touches upon ideological differences between parties, mentioning the opposition's focus on a strong state with high taxes and the lack of concrete proposals for Croatia's development.
+Scandal: 0 - There are mentions of scandals in the article, but they are used to highlight the political survival of HDZ and Plenković rather than focusing on scandalous behavior.
+
+Refinement: The initial analysis seems accurate based on the content of the article. The positive sentiment towards HDZ and Plenković is clear, as is the praise for Možemo's grassroots activism. The absence of mentions for SDP, MOST, and DP aligns with the lack of information about these parties in the text.
+
+###
+
+FINAL RESULTS
+HDZ: 1
+SDP: NO
+MOST: NO
+Možemo: 1
+DP: NO
+Policy: 1
+Ideological: 1
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': '1', 'DP': 'NO', 'Policy': '1', 'Ideological': '1', 'Scandal': '0'}
+
+
+Processing article with ID #14
+
+URL:  https://direktno.hr/direkt/plenkovic-cestitao-covicu-rodendan-sestrinske-stranke-141712/
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 0 (Neutral) - HDZ is mentioned in the article, but the sentiment towards them is neutral. Ljubica Maksimčuk from HDZ expresses concern about the potential negative impact on the citizens of Slavonski Brod due to the merging of the agencies, but also hopes that nothing bad will happen.
+SDP: NO - SDP is not mentioned in the article.
+MOST: 1 (Positive) - Miro Bulj from MOST questions the independence of HAOP when it is merged with the Ministry, expressing concerns about the potential negative consequences. He emphasizes the importance of protecting independent agencies and the environment, aligning with MOST's typical stance on these issues.
+Možemo: NO - Možemo is not mentioned in the article.
+DP: NO - Domovinski pokret is not mentioned in the article.
+Policy: 1 - The article discusses the government's decision to reduce the number of agencies without thorough analysis, highlighting concerns about the potential negative effects and lack of clarity on savings and impacts on citizens.
+Ideological: 0 - The article focuses more on policy decisions and governance rather than ideological differences.
+Scandal: 0 - There are no mentions of any scandalous behavior in the article.
+
+Refinement: The initial classifications seem accurate based on the content of the article. The sentiment towards HDZ is indeed neutral, while MOST's position aligns with their typical stance on environmental issues. There are no mentions of SDP, Možemo, or Domovinski pokret in the article, so the classifications for those parties remain as 'NO'.
+
+###
+FINAL RESULTS
+HDZ: 0
+SDP: NO
+MOST: 1
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '0', 'SDP': 'NO', 'MOST': '1', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #15
+
+URL:  https://www.24sata.hr/news/gong-o-tomasevicu-i-holdingu-imenovanja-bez-natjecaja-nisu-put-koji-su-izabrali-zagrepcani-768249
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative)
+The article criticizes the new mayor, Tomislav Tomašević, for appointing experts to the management and Supervisory Board of Zagreb Holding without public tenders, which goes against the promises made during the election campaign. The mention of the previous mayor, Milan Bandić, who was associated with HDZ, and the criticism of the current practices imply a negative sentiment towards HDZ.
+
+SDP: NO
+There is no mention of SDP in the article.
+
+MOST: NO
+There is no mention of MOST in the article.
+
+Možemo: 1 (positive)
+The article praises the platform Možemo for advocating for mandatory public tenders when selecting leaders in public and city-owned companies. It highlights the importance of expertise over political affiliation, aligning with Možemo's principles. Therefore, the sentiment towards Možemo is positive.
+
+DP: NO
+There is no mention of Domovinski pokret (DP) in the article.
+
+Policy: 1
+The article discusses the importance of transparent governance and the need for public tenders in appointing officials to city-owned companies like Zagreb Holding. This falls under the policy category as it addresses governance practices and future decision-making processes.
+
+Ideological: 0
+The article does not delve into left/right-wing ideologies or specific Croatian political aspects, focusing more on governance and transparency issues.
+
+Scandal: 0
+There are no mentions of personal misconduct or scandals involving public officials in the article.
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: NO
+Možemo: 1
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': '1', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #16
+
+URL:  https://www.index.hr/vijesti/clanak/oporba-nema-razlike-izmedju-sanaderovog-i-plenkovicevog-hdza/2317307.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article criticizes HDZ, mentioning the arrest of Gabriela Žalac, a member of the HDZ Presidency, and former Minister of Regional Development and EU Funds, for corruption. The opposition parties, including SDP, MOST, and Možemo, highlight the corruption within HDZ, comparing it to the era of Ivo Sanader. The sentiment towards HDZ is clearly negative in this article.
+SDP: 1 (positive) - SDP is portrayed in a positive light, with members like Peđa Grbin criticizing the corruption within HDZ and calling for accountability. The article mentions SDP's efforts to address corruption issues and their stance on the situation, indicating a positive sentiment towards the party.
+MOST: 0 (neutral) - While MOST is mentioned in the article, there is no clear sentiment expressed towards the party. Marija Selak Raspudić from MOST raises questions about the government's response to the situation, but it does not indicate a positive or negative sentiment towards the party.
+Možemo: 0 (neutral) - Možemo is mentioned in the article through Sandra Benčić's comments, but there is no explicit sentiment expressed towards the party. Benčić raises concerns about the current state of affairs and the ongoing corruption issues but does not specifically address Možemo.
+DP: 0 (neutral) - Domovinski pokret is briefly mentioned in the article through Stjepo Bartulica's statement, but there is no sentiment expressed towards the party. Bartulica comments on the general situation in Croatia regarding the abuse of power but does not tie it directly to DP.
+Policy: 1 - The article discusses the arrest of Gabriela Žalac for corruption, highlighting the issues within the HDZ party and the Croatian government. It also touches upon the Eurobarometer survey results regarding corruption in Croatia, indicating a policy-related discussion on governance and accountability.
+Ideological: 0 - The article focuses more on the corruption and legal issues surrounding HDZ rather than delving into specific ideological differences between parties. While there are mentions of party stances, the main focus is on the corruption allegations.
+Scandal: 1 - The article revolves around the scandal of the arrest of Gabriela Žalac, a high-ranking member of HDZ, for corruption. The discussions within the article center on the scandalous nature of the situation and the implications for the ruling party.
+
+Refinement: Upon further review, the sentiment towards HDZ remains negative due to the corruption allegations and criticism from opposition parties. The positive sentiment towards SDP is reinforced by their stance on corruption issues. The mentions of MOST, Možemo, and DP remain neutral, as there is no explicit sentiment towards these parties. The categorization of the article as policy, ideological, and scandal seems accurate based on the content.
+
+### FINAL RESULTS
+HDZ: -1
+SDP: 1
+MOST: 0
+Možemo: 0
+DP: 0
+Policy: 1
+Ideological: 0
+Scandal: 1
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '1', 'MOST': '0', 'Možemo!': '0', 'DP': '0', 'Policy': '1', 'Ideological': '0', 'Scandal': '1'}
+
+
+Processing article with ID #17
+
+URL:  https://www.24sata.hr/news/grbin-prozvao-plenkovica-zbog-cjepiva-zasto-suti-i-ne-reagira-na-nepravdu-prema-hrvatskoj-750562
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative)
+SDP: 1 (positive)
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+
+In the article, Peđa Grbin, the president of SDP, criticizes Prime Minister Andrej Plenković from HDZ for his handling of the vaccine distribution in Croatia. Grbin questions why Plenković, as the Prime Minister representing Croatia in the European Council, remains silent and does not react to the perceived injustice towards Croatia and other smaller EU countries. Grbin's comments reflect a negative sentiment towards HDZ, as he accuses Plenković of not taking appropriate action. This negative sentiment is further emphasized when Grbin mentions that only Plenković has remained silent on the issue, while others, including scientists, media, and the opposition, have spoken out. Therefore, the sentiment towards HDZ is negative in this article. On the other hand, Grbin's statements advocating for solidarity, freedom, democracy, honesty, and justice align with the core values of SDP, indicating a positive sentiment towards the party. Since MOST, Možemo, and DP are not mentioned in the article, they are labeled as 'NO'. The content of the article falls under the policy category as it discusses the government's response to the vaccine distribution issue and the criticism from the opposition.
+
+Refinement: Upon further review, the sentiment towards HDZ is more explicitly negative due to the direct criticism from Grbin towards Plenković. The positive sentiment towards SDP is reinforced by Grbin's alignment of the party's values with his statements. The absence of mentions of MOST, Možemo, and DP remains consistent with the initial evaluation.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: 1
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+###
+EXCEPTION WHEN PARSING YAML
+
+
+Processing article with ID #18
+
+URL:  https://dnevnik.hr/vijesti/hrvatska/pozar-u-najvecoj-oporbenoj-stranci-ni-priblizno-nije-pred-gasenjem---669190.html
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: NO - The article does not mention HDZ at all.
+SDP: -1 - The sentiment towards SDP in the article is negative. There are mentions of internal conflicts within the party, with members being expelled and accusations of manipulation and personal interests.
+MOST: NO - There is no mention of MOST in the article.
+Možemo: NO - Možemo is not referenced in the article.
+DP: NO - There is no reference to Domovinski pokret in the article.
+Policy: 0 - The article focuses on internal party conflicts and expulsions, rather than policy discussions or governance issues.
+Ideological: 0 - The article does not touch upon left/right wing points or Croatian specifics.
+Scandal: 1 - The article revolves around internal party conflicts, expulsions, and accusations, which can be categorized as a scandal.
+
+Refinement: Upon further review, the sentiment towards SDP is negative due to the internal conflicts and accusations within the party. The focus on personal interests and manipulation adds to the scandalous nature of the article.
+
+###
+
+FINAL RESULTS
+HDZ: NO
+SDP: -1
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 0
+Ideological: 0
+Scandal: 1
+###
+Parsed response:  {'HDZ': 'NO', 'SDP': '-1', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '0', 'Ideological': '0', 'Scandal': '1'}
+
+
+Processing article with ID #19
+
+URL:  https://www.jutarnji.hr/vijesti/hrvatska/mozemo-zauzeo-pazin-na-prijevremenim-izborima-osvojio-natpolovicnu-vecinu-u-vijecu-15107235
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - HDZ is mentioned in the article as only winning one seat in the city council of Pazin, which can be seen as a negative outcome for the party.
+SDP: -1 (negative) - SDP is mentioned as being eliminated from the elections in Pazin, which is a negative outcome for the party.
+MOST: NO - MOST is not mentioned in the article.
+Možemo: 1 (positive) - Možemo is the main focus of the article, winning a majority in the city council of Pazin, which is a positive outcome for the party.
+DP: NO - Domovinski pokret is not mentioned in the article.
+Policy: 1 - The article discusses the results of local elections and the implications for the city council, which falls under the policy category.
+Ideological: 0 - The article does not delve into left/right-wing points or Croatian-specific issues, so it does not fall under the ideological category.
+Scandal: 0 - There are no mentions of any scandals in the article.
+
+Refinement: Upon further review, the sentiment towards HDZ and SDP is more nuanced than initially assessed. While HDZ's performance in Pazin was poor, it may not necessarily be entirely negative as it could be a localized issue. Similarly, SDP's elimination from the elections could be seen as a setback, but it does not necessarily reflect a broader sentiment towards the party.
+
+###
+FINAL RESULTS
+HDZ: -1
+SDP: -1
+MOST: NO
+Možemo: 1
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '-1', 'MOST': 'NO', 'Možemo!': '1', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #20
+
+URL:  https://www.24sata.hr/news/problemi-za-sdp-ne-prestaju-organizaciju-u-splitu-napustaju-83-clana-izboru-kazu-farsa-799125
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: NO - The article does not mention HDZ at all.
+SDP: -1 - The sentiment towards SDP in the article is negative. The article discusses how 83 members are leaving the party in Split due to internal conflicts and dissatisfaction with the leadership. The language used to describe the situation is critical and highlights the disarray within the party.
+MOST: NO - The article does not mention MOST.
+Možemo: NO - The article does not mention Možemo.
+DP: NO - The article does not mention Domovinski pokret.
+Policy: 0 - The article focuses on internal party conflicts and resignations, not on policy issues.
+Ideological: 0 - The article does not delve into ideological differences but rather focuses on internal party dynamics.
+Scandal: 0 - While there are mentions of dissatisfaction and conflicts within the party, there are no explicit references to scandals involving misconduct.
+
+Refinement: The initial analysis correctly identified the negative sentiment towards SDP due to internal party conflicts. The absence of mentions of other parties was also accurately noted.
+
+###
+
+FINAL RESULTS
+HDZ: NO
+SDP: -1
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 0
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': 'NO', 'SDP': '-1', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '0', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #21
+
+URL:  https://www.dnevno.hr/vijesti/gigant-teskih-rijeci-i-nervoze-liliputanac-djela-i-uspjeha-hdz-u-ostroj-objavi-napao-grmoju-i-most-ovce-1871158/
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article portrays HDZ as attacking Grmoja and MOST-ovci, calling them names like "licemjeri" (hypocrites) and "klauni" (clowns). This negative sentiment is evident in the language used by HDZ representatives towards the opposition.
+SDP: NO - SDP is not mentioned in the article, so there is no sentiment towards them.
+MOST: -1 (negative) - HDZ refers to MOST-ovci as "licemjeri" (hypocrites) and "klauni" (clowns) in their Facebook post, indicating a negative sentiment towards MOST.
+Možemo: NO - Možemo is not directly mentioned in the article, so there is no sentiment towards them.
+DP: NO - Domovinski pokret (DP) is not mentioned in the article, so there is no sentiment towards them.
+Policy: 1 - The article discusses the acceptance of the report on the work of state prosecutors in 2020 and the reactions of various political parties in the Sabor, indicating a policy-related content.
+Ideological: 1 - The article touches upon the political dynamics between HDZ, MOST, and other opposition parties, showcasing ideological differences and conflicts.
+Scandal: 1 - The article involves public officials engaging in name-calling and making accusations against each other, which falls under the category of a scandal.
+
+Refinement: Upon further review, the sentiment towards MOST could be considered more neutral than negative, as the criticism from HDZ could be seen as part of the typical political discourse rather than a deeply negative attack.
+
+###
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: 0
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 1
+Scandal: 1
+###
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': '0', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '1', 'Scandal': '1'}
+
+
+Processing article with ID #22
+
+URL:  https://www.index.hr/magazin/clanak/filipovic-objavio-snimku-tomasevicevog-zamjenika-igra-sah-na-sjednici/2323041.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article mentions HDZ in a negative light, with a member criticizing Tomašević's deputy for playing chess during a city council meeting and implying a lack of respect for the institution. The HDZ member's statement conveys a negative sentiment towards Možemo and SDP as well.
+SDP: -1 (negative) - The same HDZ member's statement criticizes SDP for planning to abolish a measure related to parenting and childcare along with Možemo, contributing to a negative sentiment towards SDP.
+MOST: NO - MOST is not mentioned in the article.
+Možemo: -1 (negative) - The article indirectly criticizes Možemo by association with Tomašević's deputy playing chess during a city council meeting, implying a lack of respect for the institution and insensitivity towards social issues.
+DP: NO - Domovinski pokret is not mentioned in the article.
+Policy: 1 - The article discusses a specific incident related to the behavior of a deputy during a city council meeting, which can be considered a policy issue regarding the conduct of public officials.
+Ideological: 0 - The article does not touch upon left/right-wing points or Croatian-specific ideological topics.
+Scandal: 0 - While the behavior of the deputy playing chess during a city council meeting may be seen as inappropriate, it does not involve public official misconduct or personal scandals.
+
+Refinement: Upon further reflection, the negative sentiment towards HDZ, SDP, and Možemo is clear in the article due to the criticism from the HDZ member. The focus on the behavior of Tomašević's deputy playing chess during a city council meeting aligns with the policy category, as it pertains to the conduct of public officials.
+
+###
+FINAL RESULTS
+HDZ: -1
+SDP: -1
+MOST: NO
+Možemo: -1
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '-1', 'MOST': 'NO', 'Možemo!': '-1', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #23
+
+URL:  https://www.24sata.hr/news/viktor-gotovac-novi-je-sef-sdp-a-u-zagrebu-strucnjak-je-za-radno-pravo-zeli-povratak-titova-trga-801002
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 0 (NO)
+SDP: 1 (positive)
+MOST: 0 (NO)
+Možemo: 1 (positive)
+DP: -1 (negative)
+
+In the article, Viktor Gotovac, a member of SDP, is portrayed positively as the new leader of the party in Zagreb. His plans to rename a street after a victim and restore a square related to Tito are highlighted, showing a positive sentiment towards SDP and Gotovac. There is no mention of HDZ, MOST, or Možemo in the article. However, there is a negative sentiment towards Domovinski pokret (DP) as Gotovac is associated with more right-wing politicians like Ivan Penava and Zlatko Hasanbegović, which could lead to potential conflicts.
+
+Refinement: Upon further reflection, it is important to note that the positive sentiment towards SDP and Gotovac is mainly due to his plans for the city of Zagreb and his professional background, rather than direct party policies or actions. The negative sentiment towards DP is based on the association with right-wing politicians and potential conflicts that may arise from this connection.
+
+###
+FINAL RESULTS
+HDZ: 0
+SDP: 1
+MOST: 0
+Možemo: 1
+DP: -1
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '0', 'SDP': '1', 'MOST': '0', 'Možemo!': '1', 'DP': '-1', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #24
+
+URL:  https://www.24sata.hr/news/likvidacija-aleksandre-zec-iskonski-je-grijeh-tudmanove-hrvatske-od-kojeg-hdz-bjezi-801518
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article portrays HDZ in a negative light, linking them to the murder of Aleksandra Zec and their lack of response or acknowledgment of the crime. The article highlights the connection between HDZ and the perpetrators of the crime, as well as their celebration of Franjo Tuđman, who had ties to the individuals involved in the murder.
+SDP: 1 (positive) - SDP is portrayed positively in the article for proposing to name a street after Aleksandra Zec and participating in commemorating her. The new president of the Zagreb SDP, Viktor Gotovac, is mentioned as advocating for honoring Zec's memory.
+MOST: NO - MOST is not mentioned in the article.
+Možemo: 1 (positive) - Možemo is depicted positively for reportedly accepting the proposal to name a street after Aleksandra Zec. They are aligned with SDP in honoring the victim's memory.
+DP: NO - Domovinski pokret is not mentioned in the article.
+Policy: 0 - The article focuses more on historical events and the commemoration of a victim rather than specific policy discussions.
+Ideological: 1 (present) - The article delves into the ideological implications of honoring a victim of a crime committed during the Tuđman era and the political stances of different parties regarding this issue.
+Scandal: 1 (present) - The article discusses the scandalous nature of the murder of Aleksandra Zec, the lack of accountability for the perpetrators, and the political protection they received.
+
+Refinement: Upon reflection, the sentiment towards HDZ is even more negative than initially assessed, given the strong connections drawn between the party and the perpetrators of the crime. The positive sentiment towards SDP and Možemo is clear in their support for honoring the victim. The absence of mentions of MOST and Domovinski pokret remains unchanged.
+
+###
+FINAL RESULTS
+HDZ: -1
+SDP: 1
+MOST: NO
+Možemo: 1
+DP: NO
+Policy: 0
+Ideological: 1
+Scandal: 1
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '1', 'MOST': 'NO', 'Možemo!': '1', 'DP': 'NO', 'Policy': '0', 'Ideological': '1', 'Scandal': '1'}
+
+
+Processing article with ID #25
+
+URL:  https://www.index.hr/vijesti/clanak/roditelji-odgojitelji-ce-tuziti-zagreb/2324793.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article mentions the ruling party in Zagreb, which is Možemo and SDP, as being responsible for the decision to reduce financial aid for parents who are educators. The statement "Gradonačelnik je lagao i u predizbornoj kampanji" (The mayor lied in the pre-election campaign) implies a negative sentiment towards the ruling party, which is HDZ at the national level.
+SDP: 1 (positive) - The article mentions that the decision to reduce financial aid was made by the coalition of Možemo! and SDP, indicating a positive sentiment towards SDP.
+MOST: NO - The article does not mention MOST.
+Možemo: 1 (positive) - The article mentions that the decision to reduce financial aid was made by the coalition of Možemo! and SDP, indicating a positive sentiment towards Možemo.
+DP: NO - The article does not mention Domovinski pokret.
+Policy: 1 - The article discusses a policy change regarding financial aid for parents who are educators.
+Ideological: 0 - The article does not delve into left/right-wing points or Croatian-specific ideologies.
+Scandal: 0 - The article does not involve any public official misconduct or personal scandals.
+
+Refinement: The initial analysis correctly identified the sentiment towards HDZ, SDP, and Možemo based on the article's content. However, it is important to note that the ruling party in Zagreb is Možemo, not HDZ, which was incorrectly mentioned in the initial evaluation.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: 1
+MOST: NO
+Možemo: 1
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '1', 'MOST': 'NO', 'Možemo!': '1', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #26
+
+URL:  https://www.index.hr/vijesti/clanak/beljak-mostovci-su-paraziti-to-je-cinjenica/2325935.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article mentions HDZ indirectly through the criticism of the government and the ruling party. Beljak criticizes HDZ for not engaging in dialogue with other parties, leading to protests and conflicts. This negative sentiment towards the ruling party is evident in the text.
+SDP: 1 (positive) - Beljak mentions SDP positively by suggesting that they would support a referendum if they promoted vaccination. This indicates a positive sentiment towards SDP in the article.
+MOST: -1 (negative) - The article portrays MOST negatively, with Beljak referring to them as parasites and criticizing their behavior during a parliamentary session. The confrontation between Most members and Grbin is highlighted, showing a negative sentiment towards MOST.
+Možemo: NO - Možemo is not mentioned in the article, so no sentiment can be attributed to them.
+DP: NO - DP is not mentioned in the article, so no sentiment can be attributed to them.
+Policy: 1 - The article discusses the government's handling of the pandemic, the role of the ruling party, and the need for dialogue between different political parties. This falls under the policy category as it focuses on governance and political decision-making.
+Ideological: 1 - The article touches upon ideological differences between political parties, such as the stance on human rights, freedom, and the role of the government in addressing societal issues.
+Scandal: 1 - The article mentions a heated confrontation between parliamentary members, indicating a scandalous event within the political sphere.
+
+Refinement: Upon further review, the sentiment towards HDZ could be considered more neutral than outright negative, as the criticism is directed towards the government's actions rather than the party itself. The positive sentiment towards SDP remains clear, and the negative sentiment towards MOST is well-supported by the article.
+
+###
+FINAL RESULTS
+HDZ: 0
+SDP: 1
+MOST: -1
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 1
+Scandal: 1
+###
+Parsed response:  {'HDZ': '0', 'SDP': '1', 'MOST': '-1', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '1', 'Scandal': '1'}
+
+
+Processing article with ID #26
+
+URL:  https://www.index.hr/vijesti/clanak/beljak-mostovci-su-paraziti-to-je-cinjenica/2325935.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article mentions HDZ indirectly through the criticism of the government and the ruling party's handling of the pandemic. Beljak criticizes HDZ for not engaging in dialogue with other parties, leading to protests and tensions. This negative sentiment towards the ruling party is evident.
+SDP: 1 (positive) - Beljak mentions SDP positively by suggesting that they would support a referendum if they promoted vaccination. This indicates a positive sentiment towards SDP in the context of public health measures.
+MOST: -1 (negative) - Beljak refers to Most members as "parasites" and criticizes their behavior during a parliamentary session. This negative sentiment is clear in the article.
+Možemo: NO - Možemo is not mentioned in the article.
+DP: NO - Domovinski pokret is not mentioned in the article.
+Policy: 1 - The article discusses the government's response to the pandemic, the role of the ruling party, and the need for dialogue with other parties to avoid tensions and protests. This falls under the policy category.
+Ideological: 1 - Beljak's comments touch upon ideological differences between parties, such as freedom, human rights, and the role of the government in public health issues. This aligns with the ideological category.
+Scandal: 0 - The article does not involve any scandalous behavior or misconduct.
+
+Refinement: Upon further review, the sentiment towards HDZ could also be interpreted as neutral due to the indirect criticism of the ruling party. The positive sentiment towards SDP is clear, and the negative sentiment towards MOST is well-supported by the article.
+
+###
+FINAL RESULTS
+HDZ: 0
+SDP: 1
+MOST: -1
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 1
+Scandal: 0
+###
+Parsed response:  {'HDZ': '0', 'SDP': '1', 'MOST': '-1', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '1', 'Scandal': '0'}
+
+
+Processing article with ID #28
+
+URL:  https://www.index.hr/vijesti/clanak/puljak-kad-god-se-pokusao-uvesti-red-svugdje-iza-nereda-je-bio-hdz/2326209.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article mentions HDZ in a negative light, attributing disorder and unrest to the party whenever attempts are made to bring order. The statement "Kad god se pokušao uvesti red, svugdje iza nereda je HDZ" clearly indicates a negative sentiment towards HDZ.
+SDP: NO - The article does not mention SDP, so it is labeled as 'NO'.
+MOST: NO - The article does not mention MOST, so it is labeled as 'NO'.
+Možemo: NO - The article does not mention Možemo, so it is labeled as 'NO'.
+DP: NO - The article does not mention Domovinski pokret (DP), so it is labeled as 'NO'.
+Policy: 1 - The article discusses the city budget and the decision to renovate a market, which falls under policy-related topics.
+Ideological: 0 - The article does not touch upon left/right-wing points or Croatian-specific ideological issues.
+Scandal: 0 - There are no mentions of any public official misconduct or personal scandals in the article.
+
+Refinement: The sentiment towards HDZ is clear in the article, with a negative connotation associated with the party whenever order is mentioned. No other parties are mentioned, and the article primarily focuses on policy matters related to the city of Split.
+
+###
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #29
+
+URL:  https://dubrovacki.slobodnadalmacija.hr/dubrovnik/vijesti/hrvatska-i-svijet/orepic-nekadasnji-mostovac-most-je-agresivna-krajnja-desnica-zekanovic-oni-su-protivnici-cijepljenja-keleminec-most-je-prevara-dva-puta-su-isli-s-hdz-om-1151892
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative)
+SDP: 0 (NO)
+MOST: -1 (negative)
+Možemo: 0 (NO)
+DP: 0 (NO)
+Policy: 1 (The article discusses Most's referendum initiative regarding the pandemic and the limitations of fundamental rights. It delves into the legal aspects and implications of their proposals, focusing on governance and future social issues.)
+Ideological: 1 (The article touches upon Most's shift towards the extreme right, their anti-vaccination stance, and their conflict with other political parties. It also mentions their positioning as an antisystemic party, which aligns with ideological discussions.)
+Scandal: 0 (There are no mentions of any personal or public official misconduct in the article.)
+
+Refinement: The initial classifications seem accurate based on the content of the article. The sentiment towards HDZ, SDP, and DP is not explicitly mentioned, so they are labeled as 'NO'. The policy and ideological categorizations are well-supported by the content of the article, focusing on Most's political actions and beliefs.
+
+###
+FINAL RESULTS
+HDZ: -1
+SDP: 0
+MOST: -1
+Možemo: 0
+DP: 0
+Policy: 1
+Ideological: 1
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '0', 'MOST': '-1', 'Možemo!': '0', 'DP': '0', 'Policy': '1', 'Ideological': '1', 'Scandal': '0'}
+
+
+Processing article with ID #30
+
+URL:  https://www.jutarnji.hr/globus/politika/sto-je-ostalo-od-normalnoga-sdp-i-dalje-porice-stvarnost-i-trazi-alibi-za-svojega-milanovica-15134199
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article criticizes the ruling party, mentioning Plenković and his struggles during the presidency of Kolinda Grabar-Kitarović, portraying a negative image of the HDZ government.
+SDP: 0 (neutral) - The article focuses more on Milanović and his relationship with SDP members, without explicitly showing a positive or negative sentiment towards the party itself.
+MOST: NO - The party is not mentioned in the article.
+Možemo: NO - The party is not mentioned in the article.
+DP: NO - The party is not mentioned in the article.
+
+Policy: 1 - The article discusses political strategies and behaviors of different parties, focusing on their reactions to past events and their current positions.
+Ideological: 1 - The article delves into the ideological differences between parties and their leaders, especially in relation to nationalistic tendencies and political communication styles.
+Scandal: 0 - There are no mentions of any scandalous behavior or misconduct by any party members.
+
+Refinement: The initial analysis seems accurate based on the content of the article. The focus on Milanović and his political evolution provides a clear picture of the sentiments towards HDZ and SDP, while the absence of mentions of MOST, Možemo, and DP aligns with the initial classifications.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: 0
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 1
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '0', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '1', 'Scandal': '0'}
+
+
+Processing article with ID #31
+
+URL:  https://www.index.hr/vijesti/clanak/radimir-cacic-ostaje-sef-reformista/2326476.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 0 (NO)
+SDP: 0 (NO)
+MOST: 0 (NO)
+Možemo: 0 (NO)
+DP: 0 (NO)
+Policy: 1 (The article discusses the plans of Radimir Čačić and the Reformists for the next four years, focusing on building closer cooperation with center parties and emphasizing positive politics based on capabilities and results.)
+Ideological: 1 (The article mentions the Reformists as the only party in the center that is completely independent in its actions, not tied to HDZ or SDP, which highlights their ideological stance of being separate from the mainstream parties.)
+Scandal: 0 (NO)
+
+Refinement: The initial analysis correctly identified the absence of sentiment towards specific parties in the article. The policy and ideological categorizations were well-supported by the content of the article, which focused on the political positioning and future plans of the Reformists.
+
+###
+
+FINAL RESULTS
+HDZ: 0
+SDP: 0
+MOST: 0
+Možemo: 0
+DP: 0
+Policy: 1
+Ideological: 1
+Scandal: 0
+Parsed response:  {'HDZ': '0', 'SDP': '0', 'MOST': '0', 'Možemo!': '0', 'DP': '0', 'Policy': '1', 'Ideological': '1', 'Scandal': '0'}
+
+
+Processing article with ID #32
+
+URL:  https://www.dnevno.hr/vijesti/hrvatska/bolan-slom-tomaseviceve-platforme-ovo-nitko-nije-ocekivao-u-novoj-godini-prijeti-im-velika-opasnost-1885824/
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative)
+SDP: 0 (NO)
+MOST: -1 (negative)
+Možemo: -1 (negative)
+DP: 0 (NO)
+Policy: 1 (The article discusses the governance and actions of Tomislav Tomašević and his platform Možemo in Zagreb, focusing on their handling of the city's issues and administration.)
+Ideological: 0 (NO)
+Scandal: 1 (There are mentions of controversies surrounding Tomašević's appointments, conflicts within his administration, and dissatisfaction among various groups in Zagreb.)
+
+Refinement: Upon further review, the sentiment towards HDZ was negative due to the implicit comparison with the current ruling party in the article, which highlights the challenges faced by Tomašević's administration in Zagreb. The sentiment towards MOST and Možemo remains negative based on the critical tone towards their governance and handling of city affairs.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: 0
+MOST: -1
+Možemo: -1
+DP: 0
+Policy: 1
+Ideological: 0
+Scandal: 1
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '0', 'MOST': '-1', 'Možemo!': '-1', 'DP': '0', 'Policy': '1', 'Ideological': '0', 'Scandal': '1'}
+
+
+Processing article with ID #33
+
+URL:  https://www.index.hr/vijesti/clanak/za-hrvatsku-je-ovo-bila-izgubljena-godina-ne-zbog-pandemije/2329299.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative)
+The article criticizes the ruling party, HDZ, for its perceived incompetence in handling various issues, such as the lack of progress in rebuilding homes after the earthquake in Banija and the failure to provide basic services like hot water in Zagreb. The author also highlights the lack of effective leadership and the presence of incapable ministers within the HDZ government.
+
+SDP: NO
+There is no mention of the SDP in the article.
+
+MOST: NO
+There is no mention of MOST in the article.
+
+Možemo: NO
+There is no mention of Možemo in the article.
+
+DP: NO
+There is no mention of Domovinski pokret in the article.
+
+Policy: 1
+The article discusses the government's failure to address critical issues like housing reconstruction and infrastructure maintenance, indicating a policy-related focus.
+
+Refinement: Upon further review, the sentiment towards HDZ is predominantly negative due to the strong criticism of the party's performance and leadership. The absence of mentions of other parties indicates a lack of sentiment towards them in this particular article.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #34
+
+URL:  https://www.jutarnji.hr/vijesti/hrvatska/sandra-bencic-gradit-cemo-stanove-u-zagrebu-i-davati-ih-mladima-u-jeftin-dugogodisnji-najam-15146931
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article criticizes HDZ for the housing policy that has led to young people being unable to afford homes. Sandra Benčić specifically blames HDZ for the drastic decline in Croatia's population and accuses them of making the country a privilege for some and a necessary evil for others.
+SDP: 1 (positive) - Sandra Benčić mentions having good cooperation with SDP in Zagreb and in the Parliament, indicating a positive relationship between Možemo and SDP.
+MOST: NO - MOST is not mentioned in the article.
+Možemo: 1 (positive) - Sandra Benčić, a member of Možemo, is advocating for a new housing policy in Zagreb to provide affordable long-term rentals for young families, showing a positive sentiment towards Možemo.
+DP: NO - Domovinski pokret is not mentioned in the article.
+Policy: 1 - The article discusses Možemo's housing policy proposal for Zagreb, focusing on addressing the housing affordability issue and potential solutions.
+Ideological: 0 - The article does not delve into left/right-wing points or Croatian-specific ideological issues.
+Scandal: 0 - There are no mentions of any public official misconduct or personal scandals in the article.
+
+Refinement: The initial classifications seem accurate based on the content of the article. There are clear mentions of HDZ's housing policy failures and positive interactions with SDP, aligning with the initial sentiment classifications.
+
+###
+FINAL RESULTS
+HDZ: -1
+SDP: 1
+MOST: NO
+Možemo: 1
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '1', 'MOST': 'NO', 'Možemo!': '1', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #35
+
+URL:  https://www.index.hr/vijesti/clanak/sdp-kritizirao-vuckovic-zbog-nastupa-na-hrtu-ona-im-sad-odgovorila/2334067.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1 (positive) - HDZ is not mentioned in the article, but as the ruling party at the national level, it can be assumed to have a positive sentiment.
+SDP: -1 (negative) - The article criticizes SDP for their past actions in agriculture and their reaction to the Minister's appearance on HRT.
+MOST: NO - MOST is not mentioned in the article.
+Možemo: NO - Možemo is not mentioned in the article.
+DP: NO - Domovinski pokret is not mentioned in the article.
+Policy: 1 - The article discusses the Minister of Agriculture's response to criticism from SDP regarding the state of agriculture and her actions in the field.
+Ideological: 0 - The article does not touch upon left/right-wing points or Croatian-specific issues.
+Scandal: 0 - The article does not involve any public official misconduct or personal scandals.
+
+Refinement: The initial classifications seem accurate based on the content of the article. The sentiment towards HDZ is positive due to their ruling status, while SDP is portrayed negatively in the context of the article.
+
+###
+
+FINAL RESULTS
+HDZ: 1
+SDP: -1
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': '-1', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #36
+
+URL:  https://www.jutarnji.hr/vijesti/hrvatska/varazdin-postaje-prvi-grad-koji-financira-rad-psihologa-u-osnovnim-skolama-koje-ih-nemaju-15152724
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: NO - HDZ is not mentioned in the article.
+SDP: 1 - The article mentions SDP president Peđa Grbin positively, highlighting his initiative to finance psychologists in schools to address the negative psychological effects of COVID-19.
+MOST: NO - MOST is not mentioned in the article.
+Možemo: NO - Možemo is not mentioned in the article.
+DP: NO - DP is not mentioned in the article.
+Policy: 1 - The article discusses the policy initiative of financing psychologists in schools to address the impact of COVID-19 on students' mental health.
+Ideological: 0 - The article does not touch upon any specific left/right-wing points or Croatian-specific issues.
+Scandal: 0 - There are no mentions of any scandalous behavior or misconduct in the article.
+
+Refinement: The initial classifications seem accurate based on the content of the article. The focus is on the positive policy initiative of financing psychologists in schools to support students during the COVID-19 pandemic, with a specific mention of SDP's Peđa Grbin and the local government's efforts in Varaždin.
+
+###
+
+FINAL RESULTS
+HDZ: NO
+SDP: 1
+MOST: NO
+Možemo: NO
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': 'NO', 'SDP': '1', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #37
+
+URL:  https://www.index.hr/vijesti/clanak/puhovski-o-skorinom-domovinskom-pokretu-on-igra-na-sarm-ali-nema-dobre-sanse/2160952.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: NO - The article focuses on the formation of the new political organization Domovinski pokret led by Miroslav Škoro, with no mention of HDZ.
+SDP: NO - There is no reference to SDP in the article.
+MOST: NO - The article does not mention MOST.
+Možemo: NO - Možemo is not discussed in the article.
+DP: 1 - The sentiment towards Domovinski pokret (DP) is positive in the article. The text discusses the formation of the party, its potential, and the analysis provided by political analyst Žarko Puhovski. Puhovski points out some concerns about the organization's structure and leadership but overall acknowledges the potential of the party.
+Policy: 1 - The article falls under the policy category as it discusses the formation and potential of the new political organization Domovinski pokret, analyzing its chances and organizational structure.
+Ideological: 0 - There are no specific ideological points discussed in the article.
+Scandal: 0 - The article does not involve any scandalous content.
+
+Refinement: The initial analysis correctly identified the sentiment towards Domovinski pokret (DP) as positive and categorized the article under the policy domain. No further refinements are needed.
+
+###
+FINAL RESULTS
+HDZ: NO
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: 1
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': 'NO', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': '1', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #38
+
+URL:  https://www.24sata.hr/kolumne/maskare-su-prosle-a-miroslav-skoro-svejedno-glumi-orbana-678847
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1 (positive) - The article mentions HDZ in a positive light, comparing Miroslav Škoro's Domovinski pokret to HDZ and highlighting similarities in their approaches to politics and leadership style.
+SDP: NO - The article does not mention SDP at all.
+MOST: NO - There is no mention of MOST in the article.
+Možemo: NO - Možemo is not referenced in the article.
+DP: 1 (positive) - The article focuses on Miroslav Škoro and his Domovinski pokret, portraying them in a positive manner by drawing parallels between their movement and HDZ.
+Policy: 1 - The article discusses the political strategies and potential alliances of Miroslav Škoro's party, indicating a policy-related content.
+Ideological: 1 - The article delves into the ideological aspects of Domovinski pokret and its positioning in the political spectrum, making it an ideological piece.
+Scandal: 0 - There are no scandalous elements mentioned in the article.
+
+Refinement: Upon further review, the positive sentiment towards HDZ and Domovinski pokret is evident throughout the article, emphasizing their political strategies and similarities. The absence of mentions of other parties such as SDP, MOST, and Možemo confirms the initial classifications.
+
+###
+
+FINAL RESULTS
+HDZ: 1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: 1
+Policy: 1
+Ideological: 1
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': '1', 'Policy': '1', 'Ideological': '1', 'Scandal': '0'}
+
+
+Processing article with ID #39
+
+URL:  https://www.index.hr/vijesti/clanak/najnovija-anketa-sdp-povecao-prednost-pred-hdzom-skoro-raste/2163170.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article mentions that HDZ is experiencing a slight decrease in support and is facing internal party campaigning, which indicates a negative sentiment towards the party.
+SDP: 1 (positive) - SDP is highlighted as the leading party with a growing trend in support, indicating a positive sentiment towards the party.
+MOST: -1 (negative) - MOST is mentioned to be experiencing a decrease in support since January, suggesting a negative sentiment towards the party.
+Možemo: NO - Možemo is not mentioned in the article.
+DP: 1 (positive) - Domovinski pokret led by Miroslav Škoro is mentioned as the third force with an increase in support, indicating a positive sentiment towards the party.
+
+Policy: 1 - The article focuses on the monthly political preference survey results, indicating a policy-related content.
+Ideological: 0 - The article does not delve into left/right-wing points or Croatian-specific issues.
+Scandal: 0 - There are no mentions of public official misconduct or personal scandals in the article.
+
+Refinement: Upon further review, the sentiment classifications seem accurate based on the evidence provided in the article.
+
+###
+FINAL RESULTS
+HDZ: -1
+SDP: 1
+MOST: -1
+Možemo: NO
+DP: 1
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '1', 'MOST': '-1', 'Možemo!': 'NO', 'DP': '1', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #40
+
+URL:  https://www.dnevno.hr/vijesti/hrvatska/brojke-su-na-skorinoj-strani-i-pored-bandica-je-imao-sanse-sad-je-favorit-za-ulazak-u-drugi-krug-tomasevic-u-panici-mora-mijenjati-kampanju-1685113/
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative)
+The article mentions HDZ as the fifth candidate in the Zagreb mayoral race, with their candidate Davor Filipović polling at 7.8 percent. The article also implies that HDZ is part of a potential coalition with Milan Bandić, which is criticized by the Domovinski pokret source in the article. This negative association with Bandić and the criticism from the Domovinski pokret representative lead to a negative sentiment towards HDZ.
+
+SDP: 0 (neutral)
+SDP is mentioned as the fourth candidate in the Zagreb mayoral race, with their candidate Joško Klisović polling at 10.6 percent. There is no clear positive or negative sentiment expressed towards SDP in the article, so a neutral sentiment is assigned.
+
+MOST: NO
+MOST is not mentioned in the article, so it is labeled as "NO".
+
+Možemo: 1 (positive)
+Možemo's candidate Tomislav Tomašević is portrayed as the frontrunner in the Zagreb mayoral race, with a significant lead in the polls. The article discusses how Tomašević's campaign strategy focused on criticizing Milan Bandić, and now with Bandić out of the race, Tomašević needs to adjust his campaign. Despite this adjustment, Tomašević is still seen as the favorite for the second round, indicating a positive sentiment towards Možemo.
+
+DP: 1 (positive)
+Domovinski pokret is mentioned in the article as commissioning a poll and being critical of potential HDZ involvement in a coalition with Milan Bandić. The Domovinski pokret source in the article expresses optimism about their candidate's chances in the election, indicating a positive sentiment towards DP.
+
+Policy: 1
+The article discusses the impact of Milan Bandić's sudden death on the Zagreb mayoral race and how it reshapes the dynamics of the campaign. It also mentions polling data and potential strategies for the candidates, focusing on the political implications of the event. Therefore, the article falls under the policy category.
+
+Refinement:
+Upon further review, the sentiment towards HDZ could be considered more neutral than negative, as the article does not explicitly criticize HDZ but rather mentions their position in the polls and a potential coalition with Milan Bandić. The sentiment towards SDP remains neutral, as there is no clear positive or negative portrayal in the article.
+
+###
+FINAL RESULTS
+HDZ: 0
+SDP: 0
+MOST: NO
+Možemo: 1
+DP: 1
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '0', 'SDP': '0', 'MOST': 'NO', 'Možemo!': '1', 'DP': '1', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #41
+
+URL:  https://www.index.hr/vijesti/clanak/ovo-je-tip-koji-je-danas-uz-prijetnju-bombom-upao-u-skolu-i-trazio-hdzovog-zupana/2258954.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article mentions a man who entered a school claiming to have a bomb and specifically asked for the HDZ county prefect Žinić. This incident reflects negatively on HDZ as it was the target of the threat.
+SDP: NO - The Social Democratic Party (SDP) is not mentioned in the article.
+MOST: NO - The Bridge of Independent Lists (MOST) is not mentioned in the article.
+Možemo: NO - The Možemo party is not mentioned in the article.
+DP: 0 (neutral) - The article briefly mentions a former member of the Domovinski pokret (DP), Karolina Vidović Krišto, but does not provide any sentiment towards the party itself.
+
+Policy: 0 - The article does not focus on policy issues but rather on a security incident involving a threat to a public official.
+Ideological: 0 - There are mentions of extreme right-wing views expressed by the individual involved in the incident, but it does not delve into broader ideological discussions.
+Scandal: 1 (present) - The article covers a scandal involving a man entering a school with a bomb threat and specifically targeting an HDZ county prefect.
+
+Refinement: The initial analysis correctly identified the negative sentiment towards HDZ due to the security incident involving a bomb threat. The lack of mention of other political parties was accurately noted. The article's focus on the scandal aspect was also correctly identified.
+
+###
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: 0
+Policy: 0
+Ideological: 0
+Scandal: 1
+###
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': '0', 'Policy': '0', 'Ideological': '0', 'Scandal': '1'}
+
+
+Processing article with ID #42
+
+URL:  https://net.hr/danas/vijesti/jandrokovic-skoro-ce-i-u-zagrebu-nastaviti-gubitnicki-niz-nije-mi-jasno-zasto-ulazi-u-vec-izgubljene-bitke-317f0922-b9f4-11ec-9fb6-0242ac13001c
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1 (positive) - Gordan Jandroković, as a key member of HDZ, expresses satisfaction with the HDZ candidate for mayor of Zagreb being in the lead in polls. He also criticizes Miroslav Škoro, from Domovinski pokret, for entering the race and continuing to lose. Jandroković's positive remarks about the HDZ candidate indicate a favorable sentiment towards HDZ.
+SDP: NO - The Social Democratic Party (SDP) is not mentioned in the article.
+MOST: NO - The Bridge of Independent Lists (MOST) is not mentioned in the article.
+Možemo: NO - The political party Možemo is not mentioned in the article.
+DP: -1 (negative) - Gordan Jandroković criticizes Miroslav Škoro, a key member of Domovinski pokret, for entering the mayoral race and continuing to lose, indicating a negative sentiment towards DP.
+Policy: 1 - The article discusses the upcoming mayoral elections in Zagreb and the strategies of different candidates, focusing on governance and political strategies.
+Ideological: 0 - The article does not touch upon left/right-wing points or Croatian-specific ideological issues.
+Scandal: 0 - There are no mentions of public official misconduct or personal scandals in the article.
+
+Refinement: Upon further review, the sentiment towards Domovinski pokret (DP) could be considered more neutral rather than negative, as Gordan Jandroković's comments were more focused on Miroslav Škoro's actions rather than a direct attack on DP as a party.
+
+###
+
+FINAL RESULTS
+HDZ: 1
+SDP: NO
+MOST: NO
+Možemo: NO
+DP: 0
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': 'NO', 'DP': '0', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #43
+
+URL:  https://www.jutarnji.hr/vijesti/zagreb/tomasevic-upozorio-na-urbanisticki-kaos-u-trnju-komentirao-i-skorinu-kandidaturu-15055730
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: NO - The article does not mention HDZ or any key members associated with the party.
+SDP: NO - The article does not mention SDP or any key members associated with the party.
+MOST: NO - The article does not mention MOST or any key members associated with the party.
+Možemo: 1 - The article focuses on Tomislav Tomašević, a key member of Možemo, addressing urbanistic issues in Zagreb and outlining his plans for improvement after the elections. His statements are positive and proactive, indicating a favorable sentiment towards Možemo.
+DP: NO - The article does not mention Domovinski pokret (DP) or any key members associated with the party.
+
+Policy: 1 - The article discusses urbanistic issues in the Trnje district of Zagreb, highlighting the need for improvements in infrastructure and drainage systems. It also mentions plans to address these issues using European funds, indicating a policy-focused content.
+Ideological: 0 - The article does not delve into left/right-wing points or Croatian-specific ideological topics.
+Scandal: 0 - The article does not involve any public official misconduct or personal scandals.
+
+Refinement: Upon further review, the sentiment towards Možemo remains positive based on Tomašević's proactive approach to addressing urbanistic issues in Zagreb. The absence of mentions of other parties or key members limits the scope of sentiment analysis for this article.
+
+###
+FINAL RESULTS
+HDZ: NO
+SDP: NO
+MOST: NO
+Možemo: 1
+DP: NO
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': 'NO', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': '1', 'DP': 'NO', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #44
+
+URL:  https://www.index.hr/vijesti/clanak/hdz-i-sdp-u-padu-mozemo-treca-stranka-u-hrvatskoj/2259415.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative) - The article mentions that HDZ has been experiencing a decline in ratings for the third consecutive month, indicating a negative sentiment towards the party.
+SDP: -1 (negative) - Similarly to HDZ, SDP is also experiencing a decline in ratings, showing a negative sentiment towards the party.
+MOST: -1 (negative) - Although not explicitly negative, the article mentions that MOST has been surpassed by Domovinski pokret in ratings, suggesting a slightly negative sentiment towards MOST.
+Možemo: 1 (positive) - The article highlights that Možemo is currently in the third position in terms of ratings, indicating a positive sentiment towards the party.
+DP: 0 (neutral) - The article mentions Domovinski pokret's ratings without providing a clear positive or negative sentiment towards the party.
+
+Policy: 1 (present) - The article discusses the ratings of various political parties and their positions in the polls, which can be considered as policy-related content.
+Ideological: 0 (not present) - The article does not delve into specific left/right-wing points or Croatian-specific issues.
+Scandal: 0 (not present) - There are no mentions of any public official misconduct or personal scandals in the article.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: -1
+MOST: -1
+Možemo: 1
+DP: 0
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '-1', 'MOST': '-1', 'Možemo!': '1', 'DP': '0', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #45
+
+URL:  https://www.index.hr/vijesti/clanak/tomasevic-tesko-optuzen-mozemo-suti-analiticar-njima-odluke-sapcu-prijatelji/2309243.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (Negative sentiment towards HDZ as the ruling party is indirectly criticized through the problems faced by Možemo in Zagreb, implying dissatisfaction with the current government)
+SDP: NO (Not mentioned in the article)
+MOST: NO (Not mentioned in the article)
+Možemo: -1 (Negative sentiment towards Možemo as Tomislav Tomašević and Možemo are facing serious accusations and internal conflicts)
+DP: 0 (Neutral sentiment towards Domovinski pokret as they are briefly mentioned in the context of the new director of a children's hospital)
+Policy: 1 (Policy content as it discusses the governance issues and decision-making processes within the Zagreb city administration)
+Ideological: 0 (No specific left/right wing points or Croatian specifics mentioned)
+Scandal: 1 (Scandal content as it involves serious accusations and internal conflicts within Možemo)
+
+Refinement: The initial analysis correctly identified the negative sentiment towards HDZ and Možemo, as well as the scandalous nature of the article. However, the lack of mention of SDP, MOST, and Domovinski pokret was accurately noted.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: NO
+MOST: NO
+Možemo: -1
+DP: 0
+Policy: 1
+Ideological: 0
+Scandal: 1
+###
+Parsed response:  {'HDZ': '-1', 'SDP': 'NO', 'MOST': 'NO', 'Možemo!': '-1', 'DP': '0', 'Policy': '1', 'Ideological': '0', 'Scandal': '1'}
+
+
+Processing article with ID #46
+
+URL:  https://direktno.hr/domovina/grbin-hdz-ako-ste-face-raspisite-izbore-grmoja-jasno-da-presuda-fimi-mediju-drzana-ladici-mjesecima-247406/
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: -1 (negative)
+The sentiment towards HDZ in the article is negative. The opposition, including SDP and Možemo, criticized HDZ and called for apologies and early elections due to the Fimi media case. Peđa Grbin from SDP specifically mentioned the responsibility of HDZ members, including Andrej Plenković and Gordan Jandroković, for the alleged corruption. The article portrays HDZ in a negative light, emphasizing their alleged involvement in corruption and the need for accountability.
+
+SDP: 1 (positive)
+The sentiment towards SDP in the article is positive. Peđa Grbin, the president of SDP, criticized HDZ and called for apologies and early elections, positioning his party as holding the moral high ground. The article highlights SDP's stance against corruption and their call for accountability, portraying them in a positive light compared to HDZ.
+
+MOST: 0 (neutral)
+MOST is not explicitly mentioned in the article, so the sentiment towards them is neutral. While Nikola Grmoja from MOST is quoted in the article criticizing the timing of the Fimi media case verdict, the focus is more on the criticism towards HDZ rather than expressing a sentiment towards MOST.
+
+Možemo: 0 (neutral)
+Možemo is mentioned in the article through Urša Raukar Gamulin's comments, but the sentiment towards the party is neutral. The focus of the article is on criticizing HDZ and calling for accountability, with Možemo being one of the voices in opposition to the ruling party. There is no clear positive or negative sentiment expressed towards Možemo.
+
+DP: 0 (neutral)
+Domovinski pokret (DP) is mentioned in the article through Zlatko Hasanbegović's comments, but the sentiment towards the party is neutral. Hasanbegović's remarks do not express a clear positive or negative sentiment towards DP, focusing more on the political discourse and style rather than specific party policies or actions.
+
+Policy: 1
+The article falls under the policy category as it discusses the reactions of political parties, particularly the opposition, to the Fimi media case verdict and calls for accountability and early elections. The focus is on governance, accountability, and potential future actions related to corruption and political responsibility.
+
+Ideological: 0
+The article does not delve into specific left/right-wing points or Croatian-specific ideological issues. It primarily focuses on the political reactions to the Fimi media case verdict and the calls for accountability, without delving into broader ideological discussions.
+
+Scandal: 0
+While the article touches upon corruption allegations and the Fimi media case, it does not involve explicit public official misconduct or personal scandals. The focus is more on political responses and calls for accountability rather than scandalous behavior.
+
+###
+
+Refinement: Upon reviewing the article and the initial evaluation, the sentiment classifications provided seem accurate based on the content presented. The focus on criticizing HDZ and calling for accountability aligns with the negative sentiment towards HDZ and the positive sentiment towards SDP. The neutral classifications for MOST, Možemo, and DP also remain appropriate as their mentions in the article do not express clear positive or negative sentiments towards these parties.
+
+###
+
+FINAL RESULTS
+HDZ: -1
+SDP: 1
+MOST: 0
+Možemo: 0
+DP: 0
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '-1', 'SDP': '1', 'MOST': '0', 'Možemo!': '0', 'DP': '0', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #47
+
+URL:  https://direktno.hr/domovina/bacic-sacuvaj-me-boze-sdp-ovih-mjera-koje-najavljuju-boric-porucio-oporbi-nismo-ni-frajeri-ni-populisti-260381/
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1 (positive)
+- The article praises the government's package of measures, highlighting the efforts of the HDZ-led government in addressing the rising energy prices and inflation. Key members of HDZ, such as Branko Bačić, are quoted positively in the article, emphasizing the effectiveness of the government's actions.
+SDP: -1 (negative)
+- SDP is mentioned in a negative light, with Bačić expressing skepticism towards their potential measures in times of crisis. The article implies that SDP's past actions during crises were not effective, referencing the Agrokor crisis and COVID-19 pandemic.
+MOST: NO
+- MOST is not mentioned in the article.
+Možemo: 0 (neutral)
+- Možemo is mentioned in a neutral context, with Borić mentioning them in relation to their understanding of government measures. There is no clear positive or negative sentiment towards Možemo in the article.
+DP: 0 (neutral)
+- DP is mentioned in a neutral context, with Borić referencing their lack of understanding of government measures. There is no clear positive or negative sentiment towards DP in the article.
+
+Policy: 1
+- The article primarily focuses on the government's policy measures to address rising energy prices and inflation. It discusses the details of the government's package and the reactions of political actors to these measures.
+Ideological: 0
+- There are no specific ideological points discussed in the article. The focus is on policy responses to economic challenges rather than ideological differences.
+Scandal: 0
+- There are no scandalous elements mentioned in the article.
+
+Refinement: Upon further review, the sentiment towards SDP could be considered more neutral rather than explicitly negative. While there are references to past criticisms of SDP's handling of crises, the overall tone is more focused on the effectiveness of the current government's measures rather than directly attacking SDP.
+
+###
+FINAL RESULTS
+HDZ: 1
+SDP: -1
+MOST: NO
+Možemo: 0
+DP: 0
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '1', 'SDP': '-1', 'MOST': 'NO', 'Možemo!': '0', 'DP': '0', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #48
+
+URL:  https://direktno.hr/direkt/grmoja-most-je-napravio-najsnazniji-lustracijski-potez-u-povijesti-hrvatske-zekanovic-odite-se-sa-sincicem-i-kolakusicem-u-visoko-klanjati-piramida-165231/
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: 1 (positive) - The article does not mention HDZ or any of its key members. Therefore, the sentiment towards HDZ is neutral.
+SDP: 0 (neutral) - The article does not mention SDP or any of its key members. Therefore, the sentiment towards SDP is neutral.
+MOST: 0 (neutral) - The article does not mention MOST or any of its key members. Therefore, the sentiment towards MOST is neutral.
+Možemo: 0 (neutral) - The article does not mention Možemo or any of its key members. Therefore, the sentiment towards Možemo is neutral.
+DP: 0 (neutral) - The article does not mention Domovinski pokret or any of its key members. Therefore, the sentiment towards DP is neutral.
+
+Policy: 1 - The article discusses the incident involving young migrants in a camp in Greece and the call by the UNHCR for urgent action to ensure the safety of the children. This falls under the policy category as it addresses governance and humanitarian issues.
+
+Refinement: Upon further review, the article does not contain any specific mentions or implications related to Croatian political parties or their members. Therefore, the initial classifications remain unchanged.
+
+###
+
+FINAL RESULTS
+HDZ: 0
+SDP: 0
+MOST: 0
+Možemo: 0
+DP: 0
+Policy: 1
+Ideological: 0
+Scandal: 0
+###
+Parsed response:  {'HDZ': '0', 'SDP': '0', 'MOST': '0', 'Možemo!': '0', 'DP': '0', 'Policy': '1', 'Ideological': '0', 'Scandal': '0'}
+
+
+Processing article with ID #49
+
+URL:  https://www.telegram.hr/politika-kriminal/veliki-intervju-sa-sandrom-bencic-hdz-ne-moze-imati-stabilnu-vladu-njihove-ljude-povuce-koruptivna-hobotnica-i-zavrse-u-remetincu/
+EXCEPTION WHILE FETCHING RESPONSE
+Successfully writen model outputs to file C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/data/eval/sentiment_recognition/GPT-3.5.yaml
+
+
+Processing article with ID #50
+
+URL:  https://www.index.hr/vijesti/clanak/antifasisti-nije-vracen-neposteno-oduzet-naziv-trgu-marsala-tita-biraci-prevareni/2412772.aspx
+timeout: 600
+Response:  ###
+Evaluation:
+HDZ: NO - The article does not mention HDZ or any key members of the party.
+SDP: -1 (negative) - The article discusses the dissatisfaction expressed by the president of the Association of Antifascist Fighters and Antifascists (SABA RH) regarding the decision of the Zagreb City Assembly committee not to accept the proposal by the SDP club to return the name of Marshal Tito Square. This negative sentiment towards the SDP is evident in the article.
+MOST: NO - There is no mention of MOST or any key members of the party in the article.
+Možemo: -1 (negative) - The article questions the credibility of Možemo and SDP for not fulfilling their promise to return the name of Marshal Tito Square, indicating a negative sentiment towards Možemo.
+DP: NO - There is no mention of Domovinski pokret or any key members of the party in the article.
+Policy: 1 - The article focuses on the decision-making process regarding the naming of streets and squares in Zagreb, which falls under the policy category.
+Ideological: 1 - The article touches upon the historical significance of Marshal Tito and the antifascist movement, aligning with ideological discussions related to left-wing politics and antifascism.
+Scandal: 0 - There are no mentions of any scandalous behavior or misconduct in the article.
+
+Refinement: Upon further review, the sentiment towards Možemo could be interpreted as more neutral than negative, as the article mainly questions their credibility in fulfilling promises rather than outright condemning them. Additionally, the ideological aspect could be more prominent than initially assessed, given the focus on the historical significance of Marshal Tito and the antifascist movement.
+
+###
+
+FINAL RESULTS
+HDZ: NO
+SDP: -1
+MOST: NO
+Možemo: -1
+DP: NO
+Policy: 1
+Ideological: 1
+Scandal: 0
+###
+Parsed response:  {'HDZ': 'NO', 'SDP': '-1', 'MOST': 'NO', 'Možemo!': '-1', 'DP': 'NO', 'Policy': '1', 'Ideological': '1', 'Scandal': '0'}
+Successfully writen model outputs to file C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/data/eval/sentiment_recognition/GPT-3.5.yaml
+
+Process finished with exit code 0

@@ -2,12 +2,11 @@ Act as a political news sentiment classifier. Your task is to analyze Croatian a
 
 Also categorize the content as 'policy', 'ideological', or 'scandal'. Policy articles discuss party or institutional reactions to events (e.g., COVID-19, war), focusing on expertise and governance, touching upon future social/economic issues. Ideological articles cover left/right wing points, excluding economic policies, and include Croatian specifics (war veterans, “HOS”, Yugoslav regime, “UDBA”, Russian influence). Scandal articles involve public official misconduct, including personal scandals.
 
-Consider key members from each party (HDZ: Andrej Plenković, Gordan Jandroković; SDP: Peđa Grbin; MOST: Nikola Grmoja, Nino Raspudić, Miro Bulj; Možemo: Tomislav Tomašević, Sandra Benčić; DP: Ivan Penava, Mario Radić) as representing their parties in articles. Also, bear in mind that the current ruling party is HDZ,
+Consider key members from each party (HDZ: Andrej Plenković, Gordan Jandroković; SDP: Peđa Grbin; MOST: Nikola Grmoja, Nino Raspudić, Miro Bulj; Možemo: Tomislav Tomašević, Sandra Benčić; DP: Ivan Penava, Mario Radić) as representing their parties in articles. Also, bear in mind that the current ruling party at the national level is HDZ,
 so any references to the ruling party, the current government etc. are in fact references to HDZ.
 
-You're going to do your analysis in two steps. First, you'll provide reasoning and evidence from the article for each classification, and note any ambiguities or limitations. Please give your reasons for each and every score you give, this is very important! Don't forget, if a party isn't mentioned in the article, label it as "NO", not as "0" - 0 is for neutral sentiment when a party is mentioned. You will write these predictions as well as your detailed explanations for them in a
-field called Evaluation. After doing this, you will read the article again, as well as your Evaluation, and you will try to note any errors, misses or wrong classifications. You will write these observations in a field called "Refinement". Finally, you'll provide your final
-classifications scores using the template I will provide you later.
+First, you'll provide reasoning and evidence from the article for each classification, and note any ambiguities or limitations. Please give your reasons for each and every score you give, this is very important! Don't forget, if a party isn't mentioned in the article, label it as "NO", not as "0" - 0 is for neutral sentiment when a party is mentioned. You will write these predictions as well as your detailed explanations for them in a
+field called Evaluation. After doing this, you'll provide your final classifications scores using the template I will provide you later.
 
 Article:
 
@@ -17,7 +16,6 @@ Text: {{ article_text }}
 Finally, here is the template you should use for your responses. Format your output strictly like this and do not output anything else before nor after. Everything in all caps and surrounded by <> is a placeholder. IT IS EXTREMELY IMPORTANT YOU CLOSELY FOLLOW THE TEMPLATE I GIVE YOU; OTHERWISE YOUR OUTPUT WILL BE USELESS. Template:
 ###
 Evaluation: <INITIAL CLASSIFICATIONS, RATIONALE AND EXPLANATIONS>
-Refinement: <YOUR CRITICAL ANALYSIS OF THE EVALUATION FIELD>
 ###
 FINAL RESULTS
 HDZ: <SENTIMENT>
