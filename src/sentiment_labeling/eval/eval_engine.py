@@ -1,5 +1,6 @@
 import logging
 import os
+import re
 import string
 import time
 from datetime import datetime
@@ -19,12 +20,44 @@ load_dotenv()
 
 SENTIMENT_TEMPLATE_NAME = os.environ["SENTIMENT_TEMPLATE_NAME"]
 
-COLS = ["HDZ", "SDP", "MOST", "Možemo", "DP", "Policy", "Ideological", "Scandal"]
+COLS = ["HDZ", "SDP", "MOST", "Možemo!", "DP", "Policy", "Ideological", "Scandal"]
 
 def load_data_from_yaml(file_path):
     with open(file_path, 'r', encoding='UTF-8') as file:
         data = yaml.safe_load(file)
     return data
+
+def normalize_party_name(party_name):
+    # Define mappings for variations of party names
+    mappings = {
+        "Možemo!": "Možemo!",
+        "Domovinski pokret": "DP",
+        "Domovinski pokret (DP)": "DP",
+        "DP": "DP",
+        "Možemo": "Možemo!"
+    }
+    # Return the normalized name if mapping exists, otherwise return the original name
+    return mappings.get(party_name, party_name)
+
+
+def parse_response_test(response_text):
+    # Define regular expressions for extracting sentiments and reasoning
+    sentiment_pattern = r"(HDZ|SDP|MOST|DP|Možemo(?:!)?|Domovinski\s+pokret\s*(?:\(DP\))?|Policy|Ideological|Scandal): (-?\d+|NO)"
+    reasoning_pattern = r"Reasoning: (.+?)###"
+
+    # Search for sentiments and reasoning using regular expressions
+    sentiments = {}
+    for match in re.finditer(sentiment_pattern, response_text):
+        party_name, sentiment = match.group(1), match.group(2)
+        normalized_party_name = normalize_party_name(party_name)
+        sentiments[normalized_party_name] = sentiment
+
+    reasoning_match = re.search(reasoning_pattern, response_text)
+
+    # Extract reasoning if found
+    reasoning = reasoning_match.group(1) if reasoning_match else None
+
+    return sentiments
 
 def generate_and_export_predictions(input_filename, export_format="yaml", env=None):
     """Generates the model's prediction for the given file and exports them in YAML format"""
@@ -53,19 +86,13 @@ def generate_and_export_predictions(input_filename, export_format="yaml", env=No
                 article.download()
                 article.parse()
 
-                # print("Article publish date: ", article.publish_date)
-                print("Article title: ", article.title)
-                # print("Article text: ", article.text)
-
-                complete_article = "Naslov: " + article.title + "\n" + article.text
-
                 # ovo koristis ako hoces encodati i upute i article tekst unutar user_prompta
                 # user_prompt = env.get_template("determine_sentiment_5_level_en.txt").render(article=complete_article)
-                system_prompt = env.get_template(SENTIMENT_TEMPLATE_NAME).render(article_title=article.title, article_text=article.text)
+                user_prompt = env.get_template(SENTIMENT_TEMPLATE_NAME).render(article_title=article.title, article_text=article.text)
 
                 # TODO: add logging and add full response to logs
                 try:
-                    response = chatgpt_api.prompt(system_prompt=system_prompt, user_prompt=complete_article)
+                    response = chatgpt_api.prompt(user_prompt=user_prompt)
                 except Exception as e:
                     print("EXCEPTION WHILE FETCHING RESPONSE")
                     output_path = f"{OUTPUT_PATH}/{os.environ['CHATGPT_MODEL']}.yaml"
@@ -74,12 +101,23 @@ def generate_and_export_predictions(input_filename, export_format="yaml", env=No
                         yaml.dump(output_data, file, default_flow_style=False, allow_unicode=True)
                         print("Successfully writen model outputs to file " + output_path)
                     continue
+
                 print("Response: ", response)
 
                 try:
-                    parsed_response = response[response.rfind("HDZ")::]
+                    parsed_response = parse_response_test(response)
+                    # check parsed response for all fields
+                    keys = parsed_response.keys()
+                    for col in COLS:
+                        if col not in keys:
+                            raise RuntimeError(f"Error - missing key {col} in parsed response!")
+                        value = parsed_response[col]
+                        if value not in ["1", "-1", "0", "NO"]:
+                            raise RuntimeError(
+                                f"Error - unsupported value: {value} in current article parsed response for key {col}")
+                    print("Parsed response: ", parsed_response)
 
-                    param_scores = yaml.safe_load(parsed_response)
+                    param_scores = parsed_response
 
                     data = {
                         "url": url,
@@ -108,7 +146,6 @@ def generate_and_export_predictions(input_filename, export_format="yaml", env=No
                     }
 
                 output_data.append(data)
-
 
             except StopIteration:
                 break

@@ -30,7 +30,7 @@ if __name__ == "__main__":
     file1_data = load_data_from_yaml(
         "C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/data/eval/sentiment_recognition/merged_gt.yaml")
     file2_data = load_data_from_yaml(
-        "C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/data/eval/sentiment_recognition/GPT-4.yaml")
+        "C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/data/eval/sentiment_recognition/GPT-3.5.yaml")
 
     df1 = pd.DataFrame(file1_data)
     df2 = pd.DataFrame(file2_data)
