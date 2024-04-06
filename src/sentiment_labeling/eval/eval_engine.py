@@ -20,7 +20,7 @@ load_dotenv()
 
 SENTIMENT_TEMPLATE_NAME = os.environ["SENTIMENT_TEMPLATE_NAME"]
 
-COLS = ["HDZ", "SDP", "MOST", "Možemo!", "DP", "Policy", "Ideological", "Scandal"]
+COLS = ["HDZ", "SDP", "MOST", "Možemo!", "DP", "Policy", "Ideological", "Scandal", "Impact"]
 
 def load_data_from_yaml(file_path):
     with open(file_path, 'r', encoding='UTF-8') as file:
@@ -42,7 +42,7 @@ def normalize_party_name(party_name):
 
 def parse_response_test(response_text):
     # Define regular expressions for extracting sentiments and reasoning
-    sentiment_pattern = r"(HDZ|SDP|MOST|DP|Možemo(?:!)?|Domovinski\s+pokret\s*(?:\(DP\))?|Policy|Ideological|Scandal): (-?\d+|NO)"
+    sentiment_pattern = r"(HDZ|SDP|MOST|DP|Možemo(?:!)?|Domovinski\s+pokret\s*(?:\(DP\))?|Policy|Ideological|Scandal|Impact): (-?\d+|NO)"
     reasoning_pattern = r"Reasoning: (.+?)###"
 
     # Search for sentiments and reasoning using regular expressions
@@ -112,9 +112,9 @@ def generate_and_export_predictions(input_filename, export_format="yaml", env=No
                         if col not in keys:
                             raise RuntimeError(f"Error - missing key {col} in parsed response!")
                         value = parsed_response[col]
-                        if value not in ["1", "-1", "0", "NO"]:
-                            raise RuntimeError(
-                                f"Error - unsupported value: {value} in current article parsed response for key {col}")
+                        # if value not in ["1", "-1", "0", "NO"]:
+                        #     raise RuntimeError(
+                        #         f"Error - unsupported value: {value} in current article parsed response for key {col}")
                     print("Parsed response: ", parsed_response)
 
                     param_scores = parsed_response
@@ -124,6 +124,8 @@ def generate_and_export_predictions(input_filename, export_format="yaml", env=No
                         "id": id
                     }
                     data = {**data, **param_scores}
+
+                    del data["Impact"]
                 except Exception as e:
                     print("EXCEPTION WHEN PARSING YAML")
                     file1_data = load_data_from_yaml(

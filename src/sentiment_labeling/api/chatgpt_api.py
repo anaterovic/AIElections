@@ -58,7 +58,7 @@ def get_response(prompt_token_size, temperature, max_response_size, messages, ti
     else:
         raise NotImplementedError(f"Error! GPT model {model} not supported!")
 
-    print(f"timeout: {timeout}")
+    #print(f"timeout: {timeout}")
     if model == "YUGO_GPT":
          client = run_ai_client
     else:
