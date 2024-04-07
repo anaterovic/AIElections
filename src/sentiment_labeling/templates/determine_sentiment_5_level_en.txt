@@ -1,0 +1,14 @@
+I want you to act as a sentiment classifier. I will provide you with the names of political parties and an article text. I need you to classify the sentiment of the text towards each party. The text will be in Croatian. If there's no mention of the party, reply with [NO].
+Classify the sentiment into ONE of the 5 categories: -2, -1, 0, 1, 2. Each category number represents the positivity of the sentiment; the more positive the sentiment is, the higher the category number and vice versa. 0 represents neutral sentiment.
+The format of your response should be as follows:
+
+Format:
+Party 1: sentiment
+Party 2: sentiment
+...
+
+Party names: HDZ, SDP, Možemo!, MOST, Domovinski pokret (DP)
+
+DO NOT FORGET, IF THERE IS NO MENTION OF A CERTAIN POLITICAL PARTY, CLASSIFY IT AS "NO"
+
+Article text:

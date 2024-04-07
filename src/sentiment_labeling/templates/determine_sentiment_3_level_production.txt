@@ -1,0 +1,31 @@
+Act as a political news sentiment classifier. Your task is to analyze Croatian articles for sentiment towards specific parties: HDZ, SDP, MOST, Možemo, Domovinski pokret (DP), using -1 for negative, 0 for neutral, 1 for positive. If a party is not mentioned in the article, label its sentiment as 'NO'. Prioritize the title for sentiment cues.
+
+Also categorize the content as 'policy', 'ideological', or 'scandal'. Policy articles discuss party or institutional reactions to events (e.g., COVID-19, war), focusing on expertise and governance, touching upon future social/economic issues. Ideological articles cover left/right wing points, excluding economic policies, and include Croatian specifics (war veterans, “HOS”, Yugoslav regime, “UDBA”, Russian influence). Scandal articles involve public official misconduct, including personal scandals.
+Finally, try and determine the impact of the article on the public opinion, on a scale from 1-10. For example, an article just reporting on the latest social media post made by a party or a politician would be 1 or 2, while a news article exposing a major corruption affair would be 9 or 10. Use common sense and pretend you're an average Croatian citizen when determining this. Be conservative with your estimations of Impact; most articles don't really have that much impact.
+
+Consider key members from each party (HDZ: Andrej Plenković, Gordan Jandroković; SDP: Peđa Grbin; MOST: Nikola Grmoja, Nino Raspudić, Miro Bulj; Možemo: Tomislav Tomašević, Sandra Benčić; Domovinski pokret: Ivan Penava, Mario Radić) as representing their parties in articles. Also, bear in mind that the current ruling party is HDZ,
+so any references to the ruling party, the current government etc. are in fact references to HDZ.
+
+Also, to help you with your classification, I will give you a list of parties that are most likely mentioned in the article. These parties should be labeled with something other than 'NO', while the parties not mentioned in this list should probably be labeled with 'NO'.
+
+Reflect on your analysis, provide reasoning and evidence from the article for each classification, and note any ambiguities or limitations. Don't forget, if a party isn't mentioned in the article, label it as "NO", not as "0" - 0 is for neutral sentiment when a party is mentioned.
+
+Article:
+
+Title: {{ article_title }}
+Text: {{ article_text }}
+Mentioned parties: {{ mentioned_parties }}
+
+Format your output strictly like this and do not output anything else before nor after. Everything in all caps and surrounded by <> is a placeholder:
+###
+Rationale: <ALL RATIONALE AND EXPLANATIONS>
+HDZ: <SENTIMENT>
+SDP: <SENTIMENT>
+MOST: <SENTIMENT>
+Možemo: <SENTIMENT>
+Domovinski pokret: <SENTIMENT>
+Policy: <1 IF PRESENT, 0 OTHERWISE>
+Ideological:  <1 IF PRESENT, 0 OTHERWISE>
+Scandal:  <1 IF PRESENT, 0 OTHERWISE>
+Impact: <IMPACT ON SCALE 1-10>
+###

@@ -1,0 +1,14 @@
+Želim da se ponašaš kao klasifikator sentimenta. Dati ću ti popis imena političkih stranaka te tekst novinskog članak. Trebaš klasificirati sentiment teksta prema svakoj od stranaka. Ukoliko se stranka ne spominje, za nju stavi [NO].
+Klasificiraj sentiment u JEDNU od 5 kategorija: -2, -1, 0, 1, 2. Svaki broj kategorije predstavlja pozitivnost sentimenta; što je sentiment pozitivniji, veći je broj kategorije i obrnuto. 0 predstavlja neutralni sentiment.
+Format tvog odgovora treba biti kao u idućem primjeru:
+
+Format:
+<ime stranke 1>: sentiment
+<ime stranke 2>: sentiment
+...
+
+Imena stranaka: HDZ, SDP, Možemo!, MOST, Domovinski pokret (DP)
+
+Nemoj zaboraviti, AKO SE NEKA POLITIČKA STRANKA NE SPOMINJE, KLASIFICIRAJ JU KAO [NO]
+
+Tekst članka:
