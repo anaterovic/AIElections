@@ -100,7 +100,7 @@ def fetch_article_sentiment(article: Article, newslines = [], logger = None):
     no_request_tokens = len(encoding.encode(user_prompt))
     no_response_tokens = len(encoding.encode(response))
 
-    request_price = (no_request_tokens / 1000) * INPUT_TOKEN_PRICE_PER_1K + (no_response_tokens / 1000) * INPUT_TOKEN_PRICE_PER_1K
+    request_price = (no_request_tokens / 1000) * INPUT_TOKEN_PRICE_PER_1K + (no_response_tokens / 1000) * OUTPUT_TOKEN_PRICE_PER_1K
 
     parsed_response = parse_response_test(response)
     # check parsed response for all fields
@@ -206,10 +206,6 @@ def generate_and_export_predictions(input_filename, outlet, export_format="yaml"
 
     output_df = pd.concat([pd.DataFrame(output_data), df], ignore_index=True)
     output_df.to_csv(os.path.join(OUTPUT_PATH, outlet + ".csv"))
-
-def parse_response(response):
-    """Parses ChatGPT's response to try and fetch sentiment on all possible parties"""
-    pass
 
 def normalize_party_name(party_name):
     # Define mappings for variations of party names
