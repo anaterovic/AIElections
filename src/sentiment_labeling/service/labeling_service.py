@@ -16,8 +16,8 @@ from newspaper import Article
 from src.sentiment_labeling.api import chatgpt_api, yugogpt_api
 
 ARTICLES_LISTS_PATH = "data/eval/sentiment_recognition/article_list"
-OUTPUT_PATH = "C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/data/labeling/output"
-CHECKPOINT_PATH = "C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/data/labeling/progress"
+OUTPUT_PATH = "../../../data/labeling/output"
+CHECKPOINT_PATH = "../../../data/labeling/progress"
 START_DATE = "01.06.2020" # or whatever is the first date in the articles list TODO: print a warning if the first date in the articles list is after this
 END_DATE = "01.04.2024" # or whatever is the oldest date in the articles list TODO: print a warning if the last date inn the articles list is before this
 
