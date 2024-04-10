@@ -18,8 +18,8 @@ from src.sentiment_labeling.api import chatgpt_api, yugogpt_api
 ARTICLES_LISTS_PATH = "data/eval/sentiment_recognition/article_list"
 OUTPUT_PATH = "../../../data/labeling/output"
 CHECKPOINT_PATH = "../../../data/labeling/progress"
-START_DATE = "01.06.2020" # or whatever is the first date in the articles list TODO: print a warning if the first date in the articles list is after this
-END_DATE = "01.04.2024" # or whatever is the oldest date in the articles list TODO: print a warning if the last date inn the articles list is before this
+START_DATE = "15.03.2024" # or whatever is the first date in the articles list TODO: print a warning if the first date in the articles list is after this
+END_DATE = "10.04.2024" # or whatever is the oldest date in the articles list TODO: print a warning if the last date inn the articles list is before this
 
 LOG_DIR = "C:/Users/dsmoljan/Desktop/AI izbori/parlametrika/data/logs/labeling"
 
@@ -30,7 +30,7 @@ INPUT_TOKEN_PRICE_PER_1K = float(os.environ["INPUT_TOKEN_PRICE_PER_1K"])
 OUTPUT_TOKEN_PRICE_PER_1K = float(os.environ["OUTPUT_TOKEN_PRICE_PER_1K"])
 
 COLS = ["HDZ", "SDP", "MOST", "Možemo!", "DP", "Policy", "Ideological", "Scandal", "Impact"]
-OUTLETS = ["24sata.hr", "dnevnik.hr", "jutarnji.hr", "vecernji.hr", "index.hr"]
+OUTLETS = ["24sata.hr", "dnevnik.hr", "jutarnji.hr", "vecernji.hr", "index.hr", "ALL"]
 
 
 def setup_logger(log_file):
@@ -114,10 +114,13 @@ def fetch_article_sentiment(article: Article, newslines = [], logger = None):
     log_or_print("Parsed response: " + str(parsed_response), logger)
     return parsed_response, request_price
 
-def generate_and_export_predictions(input_filename, outlet, export_format="yaml", env=None):
+def generate_and_export_predictions(input_filename, outlet, export_format="yaml", env=None, all_flag=False):
     """Generates the model's prediction for the given file and exports them in YAML format"""
 
-    outlet_name = outlet.split(".hr")[0]
+    if all_flag:
+        outlet_name = "ALL"
+    else:
+        outlet_name = outlet.split(".hr")[0]
     logger = setup_logger(LOG_DIR + f"/{outlet_name}.txt")
     filename = f"{os.environ['DATA_DIR']}/labeling/article_list/{input_filename}"
     output_df = pd.DataFrame(columns=["id", "url", "title", "date", *COLS])
@@ -140,7 +143,10 @@ def generate_and_export_predictions(input_filename, outlet, export_format="yaml"
         start_date = checkpoint_data["latest_processed_date"]
         output_df = pd.read_csv(os.path.join(OUTPUT_PATH, outlet_name + ".csv"))
 
-    outlet_df = df[df['outlet'] == outlet]
+    if all_flag:
+        outlet_df = df
+    else:
+        outlet_df = df[df['outlet'] == outlet]
     outlet_df = outlet_df[df['date_published'] >= start_date]
     outlet_df = outlet_df.drop_duplicates(subset='title')
     # Iterate over rows
@@ -205,7 +211,7 @@ def generate_and_export_predictions(input_filename, outlet, export_format="yaml"
         progress_bar.update(1)
 
     output_df = pd.concat([pd.DataFrame(output_data), df], ignore_index=True)
-    output_df.to_csv(os.path.join(OUTPUT_PATH, outlet + ".csv"))
+    output_df.to_csv(os.path.join(OUTPUT_PATH, outlet + "-final.csv"))
 
 def normalize_party_name(party_name):
     # Define mappings for variations of party names
@@ -245,9 +251,9 @@ if __name__ == "__main__":
                       autoescape=select_autoescape())
     input_outlet = None
     while input_outlet not in OUTLETS:
-        input_no = input("Please select the name of the outlet:\n 1. 24sata.hr \n 2. dnevnik.hr \n 3. jutarnji.hr \n 4. vecernji.hr \n 5. index.hr\n ")
+        input_no = input("Please select the name of the outlet:\n 1. 24sata.hr \n 2. dnevnik.hr \n 3. jutarnji.hr \n 4. vecernji.hr \n 5. index.hr\n 6. ALL")
 
-        if input_no not in ["1", "2", "3", "4", "5"]:
+        if input_no not in ["1", "2", "3", "4", "5", "6"]:
             print("\nError - unsupported outlet! Please select an outlet from 1-5!\n")
             continue
 
@@ -255,6 +261,9 @@ if __name__ == "__main__":
         input_outlet = OUTLETS[index]
 
     print(f"Selected outlet {input_outlet}")
-    generate_and_export_predictions("articles.csv", input_outlet, "yaml", env)
+    all_flag = False
+    if input_outlet == "ALL":
+        all_flag = True
+    generate_and_export_predictions("articles_0324_15_end.csv", input_outlet, "yaml", env, all_flag=all_flag)
 
 

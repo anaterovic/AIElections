@@ -408,16 +408,6 @@
   Policy: 0
   Ideological: 1
   Scandal: 0
-- url: https://net.hr/danas/vijesti/jandrokovic-skoro-ce-i-u-zagrebu-nastaviti-gubitnicki-niz-nije-mi-jasno-zasto-ulazi-u-vec-izgubljene-bitke-317f0922-b9f4-11ec-9fb6-0242ac13001c
-  id: 42
-  HDZ: 1
-  SDP: NO
-  Možemo!: NO
-  MOST: NO
-  Domovinski pokret (DP): -1
-  Policy: 1
-  Ideological: 0
-  Scandal: 0
 - url: https://www.jutarnji.hr/vijesti/zagreb/tomasevic-upozorio-na-urbanisticki-kaos-u-trnju-komentirao-i-skorinu-kandidaturu-15055730
   id: 43
   HDZ: -1
@@ -478,16 +468,6 @@
   Policy: 1
   Ideological: 1
   Scandal: 0
-- url: https://www.telegram.hr/politika-kriminal/veliki-intervju-sa-sandrom-bencic-hdz-ne-moze-imati-stabilnu-vladu-njihove-ljude-povuce-koruptivna-hobotnica-i-zavrse-u-remetincu/
-  id: 49
-  HDZ: -1
-  SDP: 0
-  Možemo!: 1
-  MOST: -1
-  Domovinski pokret (DP): 0
-  Policy: 1
-  Ideological: 1
-  Scandal: 1
 - url: https://www.index.hr/vijesti/clanak/antifasisti-nije-vracen-neposteno-oduzet-naziv-trgu-marsala-tita-biraci-prevareni/2412772.aspx
   id: 50
   HDZ: NO

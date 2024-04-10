@@ -79,6 +79,8 @@ def load_and_prepare_data(csv_path: str, keep_columns: list[str]):
 
     # each column value ends with % sign, we need to remove it
     mdata = mdata.replace({'%': ''}, regex=True)
+    mdata = mdata.replace({'€' : ''}, regex=True)
+    mdata = mdata.replace({',' : ''}, regex=True)
     mdata = mdata.astype(float)
     return mdata
 
