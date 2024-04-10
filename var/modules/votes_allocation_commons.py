@@ -1,8 +1,40 @@
-from typing import Any, Dict, List, Tuple, Union
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import pandas as pd
 
 PARTY_NAMES = ["HDZ", "SDP", "MOST", "MOŽEMO", "DP"]
+
+def visualize_mandate_allocation(votes_per_party: Dict[str, int], allocated_mandates: Dict[str, int], list_winners_num_votes: List[Tuple[str, int]]):
+        num_rounds = sum(allocated_mandates.values())
+        parties = ["HDZ", "SDP", "MOST", "DP", "MOŽEMO"]
+        df = pd.DataFrame(index=parties, columns=["Total Votes"] + list(range(1, num_rounds+1)) + ["Seats Won", "True Seat Proportion"])
+        for party in parties:
+            df.loc[party, "Total Votes"] = round(votes_per_party[party])
+        for round_index, (party, votes) in enumerate(list_winners_num_votes, start=1):
+            df.loc[party, round_index] = round(votes)
+        for col in df.columns:
+            df[col] = df[col].fillna(0).astype(int)
+        for party in parties:
+            df.loc[party, "Seats Won"] = allocated_mandates.get(party, 0)
+        total_votes_for_parties = sum(votes_per_party.values())
+        true_proportion = {party: votes/total_votes_for_parties for party, votes in votes_per_party.items()}
+        true_proportion = {party: round(votes*num_rounds, 2) for party, votes in true_proportion.items()}
+        for party in parties:
+            df.loc[party, "True Seat Proportion"] = true_proportion[party]
+        # add a column which suggests a sorted list of which party was the closest to win the last seat and with which number of votes
+        last_party_to_get_a_seat = list_winners_num_votes[-1][0]
+        votes_per_party_before_last_seat_allocation = {}
+        for party, votes in votes_per_party.items():
+            if party == last_party_to_get_a_seat:
+                number_to_divide_by = allocated_mandates.get(party, 0)
+            else:
+                number_to_divide_by = allocated_mandates.get(party, 0) + 1
+            votes_per_party_before_last_seat_allocation[party] = round(votes/number_to_divide_by)
+        closest_to_win_last_seat = sorted(votes_per_party_before_last_seat_allocation.items(), key=lambda x: x[1], reverse=True)
+        for index, (party, virtual_votes) in enumerate(closest_to_win_last_seat, start=1):
+            df.loc[party, "Votes to win last seat"] = str(virtual_votes) + " (" + str(index) + ")"
+        return df
+
 
 class BirackoMjesto:
     def __init__(self, name: str, fixed: List[Tuple[str, float]], data: pd.Series):
@@ -100,10 +132,14 @@ class IzbornaGodina:
 
 
 class MandatePrediction:
-    def __init__(self, posljednaIzbornaGodina: IzbornaGodina, var_predictions: Dict[str, float], num_voters: int):
+    def __init__(self, posljednaIzbornaGodina: IzbornaGodina, var_predictions: Dict[str, float], num_voters: int, izlaznost_po_ij: Dict[int, float], broj_biraca_po_ij: Dict[int, int], ukljuci_izlaznost_po_ij: bool = True, ukljuci_izlaznost_kao_faktor: bool = False):
         self.posljednaIzbornaGodina = posljednaIzbornaGodina
         self.var_predictions = var_predictions
         self.num_voters = num_voters  # N
+        self.izlaznost_po_ij = izlaznost_po_ij
+        self.broj_biraca_po_ij = broj_biraca_po_ij
+        self.ukljuci_izlaznost_po_ij = ukljuci_izlaznost_po_ij
+        self.ukljuci_izlaznost_kao_faktor = ukljuci_izlaznost_kao_faktor
 
         # assert set(PARTY_NAMES).add("IZLAZNOST").issubset(var_predictions.keys()), f"Not all parties and IZLAZNOST are present in var_predictions. Keys in var_predictions: {var_predictions.keys()}"
 
@@ -113,9 +149,20 @@ class MandatePrediction:
         self.gross_votes_per_izborna_jedinica_last_el: Dict[int, Dict[str, int]] = {ij.id: {party: ij.get_gross_num_votes(party) for party in PARTY_NAMES} for ij in self.posljednaIzbornaGodina.izborne_jedinice}  # hdz1, hdz2, ...
         self.fixed_votes_per_izborna_jedinica_last_el: Dict[int, Dict[str, int]] = {ij.id: {party: ij.get_fixed_num_votes(party) for party in PARTY_NAMES} for ij in self.posljednaIzbornaGodina.izborne_jedinice}  # f1, f2, ...
 
-    def get_gross_num_votes_pred(self, party: str) -> int:
+    def get_gross_num_votes_pred(self, party: str, ij_id: Optional[int] = None) -> int:
         # HDZ
-        return int(self.num_voters * self.var_predictions["IZLAZNOST"] * self.var_predictions[party])
+        if self.ukljuci_izlaznost_kao_faktor:
+            izlaznost = self.var_predictions["IZLAZNOST"]
+            base_izlaznost = 0.4685
+            coefficient = base_izlaznost / izlaznost if party == "HDZ" else izlaznost / base_izlaznost if party == "SDP" else 1.0
+            for _ in range(2):
+                coefficient = (1.0 + coefficient) / 2
+        else:
+            coefficient = 1.0
+        
+        if not ij_id:
+            return int(self.num_voters * self.var_predictions["IZLAZNOST"] * self.var_predictions[party] * coefficient)
+        return int(self.broj_biraca_po_ij[ij_id] * self.izlaznost_po_ij[ij_id] * self.var_predictions[party] * coefficient)
     
     def get_variable_votes_last_el(self, ij_id: Union[int, None], party: str) -> int:
         # hdz' ili hdz1', hdz2', ...
@@ -123,14 +170,19 @@ class MandatePrediction:
             return self.national_gross_votes_last_el[party] - self.national_fixed_votes_last_el[party]
         return self.gross_votes_per_izborna_jedinica_last_el[ij_id][party] - self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party]
     
-    def estimate_num_variable_votes_received(self, party: str) -> int:
+    def estimate_num_variable_votes_received(self, party: str, ij_id: Optional[int] = None) -> int:
         # HDZ'
-        return self.get_gross_num_votes_pred(party) - self.national_fixed_votes_last_el[party]
+        if not ij_id:
+            return self.get_gross_num_votes_pred(party=party) - self.national_fixed_votes_last_el[party]
+        return self.get_gross_num_votes_pred(party=party, ij_id=ij_id) - self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party]
 
     def predict_gross_num_votes(self, ij_id: int, party: str) -> int:
         # HDZ1, HDZ2, ...
         ratio_of_variable_votes_in_izborna_jedinica: float = self.get_variable_votes_last_el(ij_id, party) / self.get_variable_votes_last_el(None, party)
-        return self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party] + self.estimate_num_variable_votes_received(party) * ratio_of_variable_votes_in_izborna_jedinica
+
+        if self.ukljuci_izlaznost_po_ij:
+            return self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party] + self.estimate_num_variable_votes_received(party=party, ij_id=ij_id)
+        return self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party] + self.estimate_num_variable_votes_received(party=party) * ratio_of_variable_votes_in_izborna_jedinica
     
     def dhondt(self, votes: Dict[str, int], mandates: int) -> Tuple[Dict[str, int], List[Tuple[str, int]]]:
         allocated_mandates: Dict[str, int] = {}
@@ -157,35 +209,3 @@ class MandatePrediction:
     
     def get_mandate_allocation(self, mandates: int) -> Dict[int, Dict[str, Any]]:
         return {ij.id: self.get_mandate_allocation_for_izborna_jedinica(ij.id, mandates) for ij in self.posljednaIzbornaGodina.izborne_jedinice}
-    
-    @staticmethod
-    def visualize_mandate_allocation(votes_per_party: Dict[str, int], allocated_mandates: Dict[str, int], list_winners_num_votes: List[Tuple[str, int]]):
-        num_rounds = sum(allocated_mandates.values())
-        parties = ["HDZ", "SDP", "MOST", "DP", "MOŽEMO"]
-        df = pd.DataFrame(index=parties, columns=["Total Votes"] + list(range(1, num_rounds+1)) + ["Seats Won", "True Seat Proportion"])
-        for party in parties:
-            df.loc[party, "Total Votes"] = round(votes_per_party[party])
-        for round_index, (party, votes) in enumerate(list_winners_num_votes, start=1):
-            df.loc[party, round_index] = round(votes)
-        for col in df.columns:
-            df[col] = df[col].fillna(0).astype(int)
-        for party in parties:
-            df.loc[party, "Seats Won"] = allocated_mandates.get(party, 0)
-        total_votes_for_parties = sum(votes_per_party.values())
-        true_proportion = {party: votes/total_votes_for_parties for party, votes in votes_per_party.items()}
-        true_proportion = {party: round(votes*num_rounds, 2) for party, votes in true_proportion.items()}
-        for party in parties:
-            df.loc[party, "True Seat Proportion"] = true_proportion[party]
-        # add a column which suggests a sorted list of which party was the closest to win the last seat and with which number of votes
-        last_party_to_get_a_seat = list_winners_num_votes[-1][0]
-        votes_per_party_before_last_seat_allocation = {}
-        for party, votes in votes_per_party.items():
-            if party == last_party_to_get_a_seat:
-                number_to_divide_by = allocated_mandates.get(party, 0)
-            else:
-                number_to_divide_by = allocated_mandates.get(party, 0) + 1
-            votes_per_party_before_last_seat_allocation[party] = round(votes/number_to_divide_by)
-        closest_to_win_last_seat = sorted(votes_per_party_before_last_seat_allocation.items(), key=lambda x: x[1], reverse=True)
-        for index, (party, virtual_votes) in enumerate(closest_to_win_last_seat, start=1):
-            df.loc[party, "Votes to win last seat"] = str(virtual_votes) + " (" + str(index) + ")"
-        return df
