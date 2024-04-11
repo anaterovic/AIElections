@@ -67,7 +67,7 @@ def convert_dates_with_mappings(index: List[str]):
     return dates_from_str(converted_index)
 
 
-def load_and_prepare_data(csv_path: str, keep_columns: list[str]):
+def load_and_prepare_data(csv_path: str, keep_columns: list):
     # load time series data
     mdata = pd.read_csv(csv_path, index_col=0)
     parties = ["HDZ", "SDP", "MOST", "DP", "MOZEMO"]
@@ -107,18 +107,34 @@ def find_optimal_model_params(mdata: pd.DataFrame, max_order: int = 4):
     
 
 
-def fit_var_model(train_endog: pd.DataFrame, train_exog: pd.DataFrame, max_lags: int, ic: str = 'aic'):
-    model = VAR(endog=train_endog, exog=train_exog)
+def fit_var_model(train: pd.DataFrame, max_lags: int, endogeneous_columns: List[str], ic: str = 'aic'):
+    endogenous = train[endogeneous_columns]
+    if len(endogeneous_columns) == train.shape[1]:
+        exogenous = None
+    else:
+        exogenous = train.drop(columns=endogeneous_columns)
+    model = VAR(endog=endogenous, exog=exogenous)
     result = model.fit(max_lags, ic=ic, verbose=True)
     return result
 
 
-def forecast_var_model(result, train_endog, train_exog, num_predictions: int, lag_order: int):
-    forecast = result.forecast(train_endog.values[-lag_order:], num_predictions, exog_future=train_exog.values[-num_predictions:])
+def forecast_var_model(result, train,  num_predictions: int, lag_order: int, endogeneous_columns: List[str]):
+    endogenous = train[endogeneous_columns]
+    if len(endogeneous_columns) == train.shape[1]:
+        exogenous = None
+    else:
+        exogenous = train.drop(columns=endogeneous_columns)
+    if exogenous is not None:
+        forecast = result.forecast(y=endogenous.values[-lag_order:], steps=num_predictions, exog_future=exogenous.iloc[-num_predictions:])
+    else:
+        forecast = result.forecast(y=endogenous.values[-lag_order:], steps=num_predictions)
     return forecast
 
 
-def correct_forecast(forecast: pd.DataFrame, test: pd.DataFrame, train_original: pd.DataFrame):
+def correct_forecast(forecast: pd.DataFrame, test: pd.DataFrame, train_original: pd.DataFrame, endogeneous_columns: List[str]):
+    test = test[endogeneous_columns]
+    train_original = train_original[endogeneous_columns]
+
     idx = test.index
     # get number of predictions
     num_predictions = forecast.shape[0]
@@ -142,40 +158,32 @@ def analyze_predicted(test: pd.DataFrame, df_forecast: pd.DataFrame):
     return mse, actual, predicted
 
 
-def perform_var_analysis(endog_mdata: pd.DataFrame, exog_mdata, max_lags: int, test_size: int):
-    endog_mdata_diff = endog_mdata.diff().dropna()
-    exog_mdata_diff = exog_mdata.diff().dropna()
+def perform_var_analysis(mdata: pd.DataFrame, max_lags: int, test_size: int, endogeneous_columns: List[str]):
+    mdata_diff = mdata.diff().dropna()
+    train = mdata_diff.iloc[:-test_size]
+    test = mdata.iloc[-test_size:]
+    train_original_values = mdata.iloc[:-test_size]
 
-    train_endog = endog_mdata_diff.iloc[:-test_size]
-    test_endog = endog_mdata.iloc[-test_size:]
-    train_endog_original_values = endog_mdata.iloc[:-test_size]
-
-    train_exog = exog_mdata_diff.iloc[:-test_size]
-    test_exog = exog_mdata.iloc[-test_size:]
-    train_exog_original_values = exog_mdata.iloc[:-test_size]
-
-    result = fit_var_model(train_endog, train_exog, max_lags)
-    forecast = forecast_var_model(result, train_endog, train_exog, test_size, max_lags)
-    df_forecast = correct_forecast(forecast, test_endog, train_endog_original_values)
-    mse, actual, predicted = analyze_predicted(test_endog, df_forecast)
+    result = fit_var_model(train, max_lags, endogeneous_columns=endogeneous_columns)
+    forecast = forecast_var_model(result, train, num_predictions=test_size, lag_order=result.k_ar, endogeneous_columns=endogeneous_columns)
+    df_forecast = correct_forecast(forecast, test, train_original_values, endogeneous_columns=endogeneous_columns)
+    mse, actual, predicted = analyze_predicted(test, df_forecast)
 
     return mse, df_forecast, actual, predicted
 
 
-def perform_var_using_test_set(endog_mdata: pd.DataFrame, exog_mdata: pd.DataFrame, max_lags: int, test_set_size: int):
+def perform_var_using_test_set(mdata: pd.DataFrame, max_lags: int, test_set_size: int, endogeneous_columns: List[str]):
     mse_list = []
     for i in range(test_set_size):
         if i > 0:
-            endog_mdata_current = endog_mdata.iloc[:-i]
-            exog_mdata_current = exog_mdata.iloc[:-i]
+            mdata_current = mdata.iloc[:-i]
         else:
-            endog_mdata_current = endog_mdata
-            exog_mdata_current = exog_mdata
+            mdata_current = mdata
         mse, _, actual, predicted = perform_var_analysis(
-            endog_mdata=endog_mdata_current,
-            exog_mdata=exog_mdata_current,
+            mdata=mdata_current,
             max_lags=max_lags,
-            test_size=1
+            test_size=1,
+            endogeneous_columns=endogeneous_columns
         )
         print(f'Discarding {i} observations')
         print(f'MSE: {mse}')
