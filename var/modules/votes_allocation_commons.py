@@ -132,14 +132,27 @@ class IzbornaGodina:
 
 
 class MandatePrediction:
-    def __init__(self, posljednaIzbornaGodina: IzbornaGodina, var_predictions: Dict[str, float], num_voters: int, izlaznost_po_ij: Dict[int, float], broj_biraca_po_ij: Dict[int, int], ukljuci_izlaznost_po_ij: bool = True, ukljuci_izlaznost_kao_faktor: bool = False):
+    def __init__(
+            self, 
+            posljednaIzbornaGodina: IzbornaGodina,
+            var_predictions: Dict[str, float],
+            num_voters: int,
+            izlaznost_po_ij: Dict[int, float],
+            broj_biraca_po_ij: Dict[int, int],
+            izlaznost_posljednja_izborna_godina: float,
+            ukljuci_izlaznost_po_ij: bool = True,
+            ukljuci_izlaznost_kao_faktor: bool = False
+        ):
         self.posljednaIzbornaGodina = posljednaIzbornaGodina
         self.var_predictions = var_predictions
         self.num_voters = num_voters  # N
         self.izlaznost_po_ij = izlaznost_po_ij
         self.broj_biraca_po_ij = broj_biraca_po_ij
+        self.izlaznost_posljednja_izborna_godina = izlaznost_posljednja_izborna_godina
         self.ukljuci_izlaznost_po_ij = ukljuci_izlaznost_po_ij
         self.ukljuci_izlaznost_kao_faktor = ukljuci_izlaznost_kao_faktor
+
+        self.izlaznost_ratio = self.var_predictions["IZLAZNOST"] / self.izlaznost_posljednja_izborna_godina
 
         # assert set(PARTY_NAMES).add("IZLAZNOST").issubset(var_predictions.keys()), f"Not all parties and IZLAZNOST are present in var_predictions. Keys in var_predictions: {var_predictions.keys()}"
 
@@ -173,16 +186,18 @@ class MandatePrediction:
     def estimate_num_variable_votes_received(self, party: str, ij_id: Optional[int] = None) -> int:
         # HDZ'
         if not ij_id:
-            return self.get_gross_num_votes_pred(party=party) - self.national_fixed_votes_last_el[party]
-        return self.get_gross_num_votes_pred(party=party, ij_id=ij_id) - self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party]
+            return self.get_gross_num_votes_pred(party=party) - self.national_fixed_votes_last_el[party] * self.izlaznost_ratio
+        return self.get_gross_num_votes_pred(party=party, ij_id=ij_id) - self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party] * self.izlaznost_ratio
 
     def predict_gross_num_votes(self, ij_id: int, party: str) -> int:
         # HDZ1, HDZ2, ...
         ratio_of_variable_votes_in_izborna_jedinica: float = self.get_variable_votes_last_el(ij_id, party) / self.get_variable_votes_last_el(None, party)
 
         if self.ukljuci_izlaznost_po_ij:
-            return self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party] + self.estimate_num_variable_votes_received(party=party, ij_id=ij_id)
-        return self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party] + self.estimate_num_variable_votes_received(party=party) * ratio_of_variable_votes_in_izborna_jedinica
+            return self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party] * self.izlaznost_ratio \
+                + self.estimate_num_variable_votes_received(party=party, ij_id=ij_id)
+        return self.fixed_votes_per_izborna_jedinica_last_el[ij_id][party] * self.izlaznost_ratio \
+            + self.estimate_num_variable_votes_received(party=party) * ratio_of_variable_votes_in_izborna_jedinica
     
     def dhondt(self, votes: Dict[str, int], mandates: int) -> Tuple[Dict[str, int], List[Tuple[str, int]]]:
         allocated_mandates: Dict[str, int] = {}
