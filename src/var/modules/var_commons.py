@@ -121,6 +121,7 @@ def fit_var_model(train: pd.DataFrame, max_lags: int, endogeneous_columns: List[
 def forecast_var_model(result, train,  num_predictions: int, lag_order: int, endogeneous_columns: List[str]):
     endogenous = train[endogeneous_columns]
     if len(endogeneous_columns) == train.shape[1]:
+        print("NOT USING ENDOGENOUS VALUES")
         exogenous = None
     else:
         exogenous = train.drop(columns=endogeneous_columns)
