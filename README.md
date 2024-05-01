@@ -1,79 +1,64 @@
-# Git tutorial for pushing the changes directly to a branch 
+# Election Predictive Analysis Project
 
-### Optional: Installing Git on Windows
+## Introduction
+This project provides predictive analytics for electoral outcomes, integrating survey data, economic indicators, and sentiment analysis from various newspaper articles. We employ time series models, zero-shot classification, and monthly regression analysis to achieve our predictions.
 
-1. **Download Git for Windows**: Visit [https://gitforwindows.org/](https://gitforwindows.org/) and download the Git installer.
+## Data Sources
+- **Survey Data**: Modeled as latent variables from aggregated sources.
+- **Economic Variables**:
+  - Real GDP per capita
+  - Unemployment rate
+  - Disposable income
+- **Sentiment Analysis**:
+  - Newspaper articles collected from June 2020 to April 2024.
+  - Sentiment assessed using GPT-3.5 based on tailored prompts.
+  - Correlation analysis between sentiment data and party support.
 
-2. **Install Git**: Run the downloaded installer. During installation, you can leave the default settings, or customize as per your preferences.
+## Methodology
+### Sentiment Analysis
+- **Data Retrieval**: Articles fetched using TakeLab Retriever.
+- **Sentiment Assessment**: GPT-3.5 used for determining sentiment.
+- **Analysis**: Processed results to identify correlation with party support.
 
-3. **Verify Installation**: Open your Command Prompt (cmd) or Git Bash and type `git --version` to ensure Git was installed successfully.
+### Election Unit Estimations
+- **Vote Predictions**: Gross number of votes predicted for each party, accounting for turnout and historical survey data.
+- **Correction for Fixed Electoral Units**: Identified and subtracted votes from fixed electoral units to refine the prediction of variable votes.
+- **Bias and Mobilization Corrections**: Adjustments made for survey biases and mobilization by major parties.
+- **Mandate Distribution**: Utilized the d'Hondt method for estimating mandate distribution across electoral units.
 
-### Cloning a Repository and Working with Branches
+## Results
 
-1. **Open Git Bash**: You can do this by right-clicking in any folder and selecting "Git Bash Here".
+### Sentiment
+Sentiment Analysis
+![Sentiment Analysis](data/misc/sentiment.png "Sentiment Analysis")
 
-2. **Clone the Repository**: Use the `git clone` command followed by the URL of the repository. 
-   ```
-   git clone <repository-url>
-   ```
-   Replace `<repository-url>` with the actual URL of the repository.
+Correlation matrix of sentiment and support for a political party
+![Sentiment Matrix](data/misc/sentiment-matrix.png "Correlation matrix of sentiment and support for a political party")
 
-3. **Navigate to the Repository Directory**: 
-   ```
-   cd <repository-name>
-   ```
-   Replace `<repository-name>` with the name of the folder that was created by the cloning process.
+### Fixed electoral units
 
-4. **Check Available Branches** (optional): 
-   ```
-   git branch -a
-   ```
-   This command lists all branches in your repository.
+Map of fixed electorial units 
+![Sentiment Matrix](data/misc/fixed-map.png "Fixed map")
+HDZ, blue 
+SDP, red
 
-5. **Switch to the 'article-labeling' Branch**: 
-   ```
-   git checkout article-labeling
-   ```
-   If the branch doesn’t exist locally, Git will create it.
+Distribution of the support percentage for the fixed units
+![Sentiment Matrix](data/misc/fixed-distribution.png "Fixed map")
 
-### Making Changes and Committing
+### Final Predictions 
+Total predicted mandates for major parties, incorporating adjustments for known fixed votes.
 
-1. **Make Your Changes**: Use any text editor or IDE to modify or add files in the repository folder.
+| Political Parties | Predicted | Real |
+|-------------------|-----------|------|
+| HDZ               | 59        |  61  |
+| SDP               | 44        |  42  |
+| MOST              | 10        |  11  |
+| DP                | 13        |  14  |
+| MOŽEMO            | 11        |  10  |
+| Other             | 6         |  5   |
 
-2. **Stage Changes for Commit**: After making changes, stage them with:
-   ```
-   git add .
-   ```
-   This command stages all changed files. For specific files, replace `.` with the file name.
 
-3. **Commit the Changes**: 
-   ```
-   git commit -m "Your commit message"
-   ```
-   Replace `"Your commit message"` with a meaningful description of the changes.
 
-### Pushing Changes to GitHub
-
-1. **Push to Remote Repository**: 
-   ```
-   git push origin article-labeling
-   ```
-   This command pushes your commits to the `article-labeling` branch on the remote repository.
-
-2. **Verify the Push** (optional): 
-   ```
-   git log --oneline
-   ```
-   This shows the commit history. Check that your latest commit appears at the top.
-
-### Additional Tips
-
-- **Pull Latest Changes** (if needed): Before starting work, it's a good practice to pull the latest changes from the remote repository:
-  ```
-  git pull origin article-labeling
-  ```
-
-- **Resolving Merge Conflicts**: If there are conflicts after pulling, you'll need to resolve them manually in the conflicting files and then commit the changes. This can happen if someone else changed the same file of the remote repository in the meantime.
-
-- **Regular Commits**: It's a good practice to commit often with descriptive messages. This helps track changes and understand the history of the project.
+## Conclusion
+This analytical approach demonstrates significant potential in predicting electoral outcomes, which is essential for strategic decision-making in political campaigns. The insights into fixed vs. variable voting patterns are particularly valuable for understanding regional electoral dynamics.
 
