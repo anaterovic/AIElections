@@ -29,20 +29,21 @@ This project provides predictive analytics for electoral outcomes, integrating s
 ## Results
 
 ### Sentiment
-Sentiment Analysis
+Sentiment Analysis<br>
 ![Sentiment Analysis](data/misc/sentiment.png "Sentiment Analysis")
 
-Correlation matrix of sentiment and support for a political party
+Correlation matrix of sentiment and support for a political party<br>
 ![Sentiment Matrix](data/misc/sentiment-matrix.png "Correlation matrix of sentiment and support for a political party")
 
 ### Fixed electoral units
 
-Map of fixed electorial units 
+Map of fixed electorial units <br>
 ![Sentiment Matrix](data/misc/fixed-map.png "Fixed map")
-HDZ, blue 
+<br>
+HDZ, blue
 SDP, red
 
-Distribution of the support percentage for the fixed units
+Distribution of the support percentage for the fixed units <br>
 ![Sentiment Matrix](data/misc/fixed-distribution.png "Fixed map")
 
 ### Final Predictions 
